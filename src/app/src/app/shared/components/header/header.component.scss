@@ -1,0 +1,22 @@
+@use "../../../../styles.scss" as g;
+
+:host {
+  .header-container {
+    .card {
+      .card-text {
+        color: gray;
+        font-size: larger;
+      }
+    }
+
+    .link {
+      text-decoration: none;
+    }
+
+    .social-icon {
+        margin-left: map-get(g.$length, 1);
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

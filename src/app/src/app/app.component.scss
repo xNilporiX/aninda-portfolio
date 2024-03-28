@@ -1,0 +1,27 @@
+@use "../styles.scss" as g;
+
+:host {
+  .app-container {
+    display: flex;
+    padding: map-get(g.$length, 4);
+
+    .section-1 {
+      flex: 1;
+    }
+
+    .section-2 {
+      flex: 4;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :host .app-container {
+    flex-direction: column;
+
+    .section-1,
+    .section-2 {
+      flex: none;
+    }
+  }
+}

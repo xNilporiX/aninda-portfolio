@@ -1,0 +1,45 @@
+<div class="header-container">
+  <div class="card">
+    <img
+      src="../../../../assets/images/aninda-img.jpg"
+      class="card-img-top"
+      alt="image of author"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ data.profile.name }}</h5>
+      <p class="card-text">
+        {{ data.profile.summary }}
+      </p>
+      <p class="card-text">
+        {{ data.profile.summary1 }}
+      </p>
+
+      <ul>
+        <li>
+          <span>
+            <a
+              class="link"
+              [href]="gitLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ data.profile.github }}</a
+            >
+            <img src="assets/icons/github-icon.svg" class="social-icon" />
+          </span>
+        </li>
+        <li>
+            <span>
+              <a
+                class="link"
+                [href]="linkendIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ data.profile.linkedIn }}</a
+              >
+              <img src="assets/icons/linkedin-icon.svg" class="social-icon" />
+            </span>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
