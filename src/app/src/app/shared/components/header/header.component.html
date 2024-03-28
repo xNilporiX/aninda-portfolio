@@ -6,23 +6,20 @@
       alt="image of author"
     />
     <div class="card-body">
-      <h5 class="card-title">{{ data.profile.name }}</h5>
+      <h3 class="card-title">{{ data.profile.name }}</h3>
       <p class="card-text">
         {{ data.profile.summary }}
       </p>
-      <p class="card-text">
-        {{ data.profile.summary1 }}
-      </p>
-
+      <h5>{{ data.profile.getStarted }}</h5>
       <ul>
         <li>
           <span>
             <a
               class="link"
               [href]="gitLink"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ data.profile.github }}</a
+              target="_blank">
+              {{ data.profile.github }}
+            </a
             >
             <img src="assets/icons/github-icon.svg" class="social-icon" />
           </span>
@@ -38,7 +35,19 @@
               >
               <img src="assets/icons/linkedin-icon.svg" class="social-icon" />
             </span>
-          </li>
+        </li>
+        <li>
+          <span>
+            <a
+              class="link"
+              [href]="linkendIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ data.profile.resume }}</a
+            >
+            <img src="assets/icons/resume-icon.svg" class="social-icon" />
+          </span>
+      </li>
       </ul>
     </div>
   </div>

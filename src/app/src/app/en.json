@@ -3,8 +3,12 @@
     "name": "Aninda Dhar",
     "job": "Software Consultant",
     "summary": "Hello There! I am a software consultant at Chamonix IT based in Adelaide, South Australia.",
-    "summary1": "Here's some quick links to get started:",
+    "getStarted": "Here's some quick links to get started:",
     "github": "GitHub",
-    "linkedIn": "LinkedIn"
+    "linkedIn": "LinkedIn",
+    "resume": "Resume"
+  },
+  "aboutMe": {
+    "background": "Enthusiastic computer science graduate with extensive hands-on experience in immersive software development, excelling in both Web & Mobile development complemented by expertise in AI. Originating from a gaming passion, my journey unfolded through the realms of Software, IT, and cybersecurity. I've actively spearheaded innovative solutions catering to diverse industries like education, entertainment, and health, leveraging cutting-edge software. My diverse background sharpens my ability to navigate complexity, foster collaboration, and consistently deliver high-impact solutions in dynamic software ecosystems."
   }
 }
