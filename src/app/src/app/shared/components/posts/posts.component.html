@@ -1,0 +1,9 @@
+<div class="exp-container">
+  <h1 class="display-6">{{ data.posts.heading }}</h1>
+
+  @for(post of posts; track post){
+  {{ post }}
+  }@empty{
+  {{ data.posts.noPost }}
+  }
+</div>

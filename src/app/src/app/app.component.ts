@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ContentComponent } from './shared/components/content/content.component';
+import { DataService } from './services/data/data.service';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,9 @@ import { ContentComponent } from './shared/components/content/content.component'
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'app';
+  constructor(private dataService: DataService){
+    this.dataService.getData();
+  }
+
+
 }

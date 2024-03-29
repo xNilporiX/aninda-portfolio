@@ -1,0 +1,75 @@
+<div class="exp-container">
+  <h1 class="display-6">{{ data.exp.heading }}</h1>
+
+  @if(!isExpanded){
+  <h5 class="h5">
+    {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
+  </h5>
+  <ul class="list-unstyled">
+    <ul>
+      <li>{{ data.exp.chamonix.details[1] }}</li>
+      <li>{{ data.exp.chamonix.details[2] }}</li>
+      <li>{{ data.exp.chamonix.details[3] }}</li>
+      <li>{{ data.exp.chamonix.details[4] }}</li>
+      <li>{{ data.exp.chamonix.details[5] }}</li>
+      <li>{{ data.exp.chamonix.details[6] }}</li>
+      <li>{{ data.exp.chamonix.details[7] }}</li>
+      <li>{{ data.exp.chamonix.details[8] }}</li>
+      <li>{{ data.exp.chamonix.details[9] }}</li>
+    </ul>
+  </ul>
+  } @else {
+  <h5 class="h5">
+    {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
+  </h5>
+  <ul class="list-unstyled">
+    <ul>
+      <li>{{ data.exp.chamonix.details[1] }}</li>
+      <li>{{ data.exp.chamonix.details[2] }}</li>
+      <li>{{ data.exp.chamonix.details[3] }}</li>
+      <li>{{ data.exp.chamonix.details[4] }}</li>
+      <li>{{ data.exp.chamonix.details[5] }}</li>
+      <li>{{ data.exp.chamonix.details[6] }}</li>
+      <li>{{ data.exp.chamonix.details[7] }}</li>
+      <li>{{ data.exp.chamonix.details[8] }}</li>
+      <li>{{ data.exp.chamonix.details[9] }}</li>
+    </ul>
+  </ul>
+  <h5 class="h5">
+    {{ data.exp.enabled.heading }} - {{ data.exp.enabled.location }}
+  </h5>
+  <ul class="list-unstyled">
+    <ul>
+      <li>{{ data.exp.enabled.details[1] }}</li>
+      <li>{{ data.exp.enabled.details[2] }}</li>
+      <li>{{ data.exp.enabled.details[3] }}</li>
+    </ul>
+  </ul>
+
+  <h5 class="h5">
+    {{ data.exp.novatech.heading }} - {{ data.exp.novatech.location }}
+  </h5>
+  <ul class="list-unstyled">
+    <ul>
+      <li>{{ data.exp.novatech.details[1] }}</li>
+      <li>{{ data.exp.novatech.details[2] }}</li>
+      <li>{{ data.exp.novatech.details[3] }}</li>
+      <li>{{ data.exp.novatech.details[4] }}</li>
+    </ul>
+  </ul>
+
+  <h5 class="h5">{{ data.exp.dpdc.heading }} - {{ data.exp.dpdc.location }}</h5>
+  <ul class="list-unstyled">
+    <ul>
+      <li>{{ data.exp.dpdc.details[1] }}</li>
+      <li>{{ data.exp.dpdc.details[2] }}</li>
+      <li>{{ data.exp.dpdc.details[3] }}</li>
+      <li>{{ data.exp.dpdc.details[4] }}</li>
+    </ul>
+  </ul>
+  }
+
+  <button type="button" class="btn btn-primary" (click)="toggleContent()">
+    {{ isExpanded ? data.common.seeLess : data.common.seeMore }}
+  </button>
+</div>

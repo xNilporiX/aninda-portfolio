@@ -1,0 +1,8 @@
+@use "../../../../styles.scss" as g;
+
+:host {
+  .exp-container {
+    padding: map-get(g.$length, 3);
+    background-color: azure;
+  }
+}

@@ -1,14 +1,75 @@
 {
+  "common": {
+    "seeMore": "See More",
+    "seeLess": "See Less"
+  },
   "profile": {
     "name": "Aninda Dhar",
     "job": "Software Consultant",
-    "summary": "Hello There! I am a software consultant at Chamonix IT based in Adelaide, South Australia.",
+    "summary": "Salutations! I am a software consultant at Chamonix IT based in Adelaide, South Australia.",
     "getStarted": "Here's some quick links to get started:",
     "github": "GitHub",
     "linkedIn": "LinkedIn",
     "resume": "Resume"
   },
   "aboutMe": {
+    "heading": "About me",
     "background": "Enthusiastic computer science graduate with extensive hands-on experience in immersive software development, excelling in both Web & Mobile development complemented by expertise in AI. Originating from a gaming passion, my journey unfolded through the realms of Software, IT, and cybersecurity. I've actively spearheaded innovative solutions catering to diverse industries like education, entertainment, and health, leveraging cutting-edge software. My diverse background sharpens my ability to navigate complexity, foster collaboration, and consistently deliver high-impact solutions in dynamic software ecosystems."
+  },
+  "exp": {
+    "heading": "Work experience",
+    "chamonix": {
+      "heading": "Chamonix IT",
+      "position": "Software Consultant",
+      "location": "Adelaide, South Australia",
+      "details": {
+        "1": "Led critical business feature development in Angular within the health industry, aligning with system needs and addressing technology limitations, enhancing overall efficiency.",
+        "2": "Performed extensive code refactoring initiatives, ensuring strict adherence to quality standards, and proactively identifying deficiencies in existing systems.",
+        "3": "Successfully met stringent deadlines, delivering top-tier solutions, prioritising seamless functionality and superior user experiences.",
+        "4": "Conducted meticulous and comprehensive unit testing, guaranteeing robust application performance and reliability.",
+        "5": "Orchestrated the strategic migration of a human resources management system to Microsoft Planner, optimising productivity and fostering collaborative workflows.",
+        "6": "Ensured stringent adherence to quality, security, and performance standards throughout projects, collaborating closely with product owners.",
+        "7": "Utilised Azure AI Studio for preliminary data analysis and Azure DevOps Wikis for thorough documentation, fostering robust knowledge sharing among developers.",
+        "8": "Demonstrated proficiency in diverse testing methodologies, providing expert advice on Azure service purchases, employing encryption measures for data security, and ensuring comprehensive app accessibility.",
+        "9": "Managed testing and automated application deployments using Azure Board pipelines, significantly enhancing software deployment efficiency and mitigating risks across the product lifecycle."
+      }
+    },
+    "enabled": {
+      "heading": "Enabled Solutions",
+      "position": "Junior Developer",
+      "location": "Adelaide, South Australia",
+      "details": {
+        "1": "Collaborated closely with the manager on PHP and Symfony applications, fortifying a resilient system that ensured consistent client stability and satisfaction.",
+        "2": "Helped to integrate innovative functionalities into company projects, leveraging React and Typescript to enhance user experiences and project capabilities significantly.",
+        "3": "Fostered deeper client relationships and a comprehensive understanding of their needs, contributing to the continuous improvement of project outcomes."
+      }
+    },
+    "novatech": {
+      "heading": "Novatech Creative Event Technology",
+      "position": "IT Helpdesk intern",
+      "location": "Adelaide, South Australia",
+      "details": {
+        "1": "Evaluated user-experience on Windows 11, creating Windows 11 Pro image using Microsoft Deployment Toolkit and optimising Active Directory Group Policy Objects.",
+        "2": "Conducted hardware stress tests, performance benchmarking, and suitability testing for newly imaged machines, documenting changes.",
+        "3": "Developed a time tracking software flow for precise client project hour billing.",
+        "4": "Implemented Microsoft 365 tools like SharePoint Lists and Power Automate Flow for asset management, facilitating IT servicing tasks and enhancing asset identification for the helpdesk department."
+      }
+    },
+    "dpdc": {
+      "heading": "Dhaka Power Distribution Company (DPDC)",
+      "position": "Cybersecurity intern",
+      "location": "Dhaka, Bangladesh",
+      "details": {
+        "1": "Collaborated with the system administrator, using Linux for system maintenance.",
+        "2": "Crafted a comprehensive report addressing the Apache log4j vulnerability, contributing significantly to raising awareness and preventing potential vulnerabilities.",
+        "3": "Acquired in-depth knowledge regarding prevalent global cyber-attacks, fostering an enhanced understanding of threat landscapes.",
+        "4": "Delivered a compelling presentation on common cyber-attacks targeting power sectors worldwide, actively supporting the team in fortifying DPDC's networks and services against potential threats."
+      }
+    }
+  },
+  "posts": {
+    "heading": "Posts",
+    "noPost": "No Post added yet"
   }
+
 }
