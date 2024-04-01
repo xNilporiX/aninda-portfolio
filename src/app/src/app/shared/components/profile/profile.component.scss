@@ -1,0 +1,63 @@
+@use "../../../styles/styles.scss" as g;
+
+:host {
+  .profile-container {
+    display: flex;
+    padding: map-get(g.$length, 3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .card-img-top {
+      max-width: 60%;
+      max-height: 60%;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .profile-banner {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      margin: map-get(g.$length, 3);
+      background-color: g.$color-light-gray;
+      padding: map-get(g.$length, 5);
+      justify-content: center;
+      align-items: center;
+
+      .text-banner {
+        .display-1 {
+          font-size: 6rem;
+        }
+
+        .position {
+          justify-self: start;
+          color: g.$color-dark-green;
+          margin-top: map-get(g.$length, 1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :host .profile-container {
+    padding: map-get(g.$length, 3);
+    
+    .card-img-top {
+      max-width: 100%;
+      max-height: auto;
+    }
+
+    .profile-banner {
+        width: 100%;
+        padding: map-get(g.$length, 2);
+        margin: map-get(g.$length, 3) map-get(g.$length, 3) 0 map-get(g.$length, 3);
+
+        .text-banner .display-1 {
+            font-size: 3rem;
+        }
+    }
+  }
+}
