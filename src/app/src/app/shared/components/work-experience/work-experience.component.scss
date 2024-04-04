@@ -2,9 +2,19 @@
 
 :host {
   .exp-container {
-    padding: map-get(g.$length, 3);
-    background-color: azure;
-    border: 1px solid darkgray;
-    border-radius: map-get(g.$length, 3);
+    color: var(--color-primary);
+    padding: map-get(g.$length, 9);
+    background-color: var(--color-light-black);
+
+    .heading {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hr {
+      border: 0;
+      height: 5px;
+      background-color: white;
+    }
   }
 }

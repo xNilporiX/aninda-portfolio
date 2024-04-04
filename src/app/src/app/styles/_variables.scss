@@ -1,8 +1,19 @@
 // src/styles/_variables.scss
 
 // Color Scheme
-$color-pastel: #EFE9E4;
-$color-dark-green: #5E6855;
+$color-pastel: #efe9e4;
+$color-dark-green: #5e6855;
 
 $color-light-gray: #a6a6a6;
-$color-dark-gray: #6E6767;
+$color-dark-gray: #6e6767;
+
+:root {
+  --color-primary: #e2e2e2;
+  --color-pastel: #efe9e4;
+  --color-dark-green: #5e6855;
+
+  --color-light-gray: #a6a6a6;
+  --color-dark-gray: #6e6767;
+
+  --color-light-black: #2b2b2b;
+}

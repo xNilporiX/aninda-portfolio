@@ -25,3 +25,9 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  :host .about-container .content {
+    padding: map-get(g.$length, 3);
+  }
+}
