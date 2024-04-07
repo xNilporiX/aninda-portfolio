@@ -1,36 +1,39 @@
 <div class="exp-container">
   <h1 class="display-6 heading">{{ data.exp.heading }}</h1>
-  <hr class="hr">
+  <hr class="hr" />
 
-  @if(!isExpanded){
-  <h5 class="h5">
-    {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
-  </h5>
-  <ul class="list-unstyled">
-    <ul>
-      <li>{{ data.exp.chamonix.details[1] }}</li>
-      <li>{{ data.exp.chamonix.details[2] }}</li>
-      <li>{{ data.exp.chamonix.details[3] }}</li>
-      <li>...</li>
+  <div class="exp-card">
+    <h5 class="h5">
+      {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
+    </h5>
+    <ul class="list-unstyled">
+      <p class="lead">
+        {{ data.exp.chamonix.summary }}
+      </p>
+      <h5 class="h5">{{ data.common.key_achievements }}</h5>
+      <ul>
+        <b>{{ data.exp.chamonix.development }}</b>
+        <ul>
+          <li>{{ data.exp.chamonix.details[1] }}</li>
+          <li>{{ data.exp.chamonix.details[2] }}</li>
+          <li>{{ data.exp.chamonix.details[3] }}</li>
+        </ul>
+        <li>
+          <b>{{ data.exp.chamonix.leadership }}</b>
+          {{ data.exp.chamonix.details[4] }}
+        </li>
+        <li>
+          <b>{{ data.exp.chamonix.efficiency }}</b>
+          {{ data.exp.chamonix.details[5] }}
+        </li>
+        <li>
+          <b>{{ data.exp.chamonix.oe }}</b> {{ data.exp.chamonix.details[6] }}
+        </li>
+      </ul>
     </ul>
-  </ul>
-  } @else {
-  <h5 class="h5">
-    {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
-  </h5>
-  <ul class="list-unstyled">
-    <ul>
-      <li>{{ data.exp.chamonix.details[1] }}</li>
-      <li>{{ data.exp.chamonix.details[2] }}</li>
-      <li>{{ data.exp.chamonix.details[3] }}</li>
-      <li>{{ data.exp.chamonix.details[4] }}</li>
-      <li>{{ data.exp.chamonix.details[5] }}</li>
-      <li>{{ data.exp.chamonix.details[6] }}</li>
-      <li>{{ data.exp.chamonix.details[7] }}</li>
-      <li>{{ data.exp.chamonix.details[8] }}</li>
-      <li>{{ data.exp.chamonix.details[9] }}</li>
-    </ul>
-  </ul>
+    <p class="lead conclusion">{{ data.exp.chamonix.conclusion }}</p>
+  </div>
+
   <h5 class="h5">
     {{ data.exp.enabled.heading }} - {{ data.exp.enabled.location }}
   </h5>
@@ -63,8 +66,6 @@
       <li>{{ data.exp.dpdc.details[4] }}</li>
     </ul>
   </ul>
-  }
-
   <button type="button" class="btn btn-primary" (click)="toggleContent()">
     {{ isExpanded ? data.common.seeLess : data.common.seeMore }}
   </button>

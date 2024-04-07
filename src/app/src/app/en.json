@@ -1,7 +1,8 @@
 {
   "common": {
     "seeMore": "See More",
-    "seeLess": "See Less"
+    "seeLess": "See Less",
+    "key_achievements": "Key Achievements:"
   },
   "profile": {
     "name": "Aninda Dhar",
@@ -14,7 +15,7 @@
   },
   "aboutMe": {
     "heading": "About me",
-    "background": "Enthusiastic computer science graduate with extensive hands-on experience in immersive software development, excelling in both Web & Mobile development complemented by expertise in AI. Originating from a gaming passion, my journey unfolded through the realms of Software, IT, and cybersecurity. I've actively spearheaded innovative solutions catering to diverse industries like education, entertainment, and health, leveraging cutting-edge software. My diverse background sharpens my ability to navigate complexity, foster collaboration, and consistently deliver high-impact solutions in dynamic software ecosystems."
+    "background": "I am a Software Consultant with extensive hands-on experience in immersive software development, excelling in both Web & Mobile development complemented by expertise in AI. Originating from a gaming passion, my journey unfolded through the realms of Software, IT, and cybersecurity. I've actively spearheaded innovative solutions catering to diverse industries like education, entertainment, and health, leveraging cutting-edge software. My diverse background sharpens my ability to navigate complexity, foster collaboration, and consistently deliver high-impact solutions in dynamic software ecosystems."
   },
   "exp": {
     "heading": "Work experience",
@@ -22,17 +23,20 @@
       "heading": "Chamonix IT",
       "position": "Software Consultant",
       "location": "Adelaide, South Australia",
+      "summary": "As a Software Consultant, I specialize in creating great software applications, with a very high standard for quality. My expertise spans from development to operational improvement, with a strong emphasis on innovation and client satisfaction.",
+      "efficiency": "Efficiency Boost:",
+      "oe": "Operational Excellence:",
+      "leadership": "Leadership:",
+      "development": "Development:",
       "details": {
-        "1": "Contributed significantly to the development and quality enhancement of Angular projects in the health & education industry, achieving significant improvements in functionality, user experience, and system efficiency through diligent code refactoring and comprehensive unit testing.",
-        "2": "Led the strategic migration of Human resources portal, effectively enhancing team productivity and collaboration by meticulously planning and executing data migration with a keen focus on maintaining data integrity and security.",
-        "3": "Successfully met stringent deadlines, delivering top-tier solutions, prioritising seamless functionality and superior user experiences.",
-        "4": "Conducted meticulous and comprehensive unit testing, guaranteeing robust application performance and reliability.",
-        "5": "Orchestrated the strategic migration of a human resources management system to Microsoft Planner, optimising productivity and fostering collaborative workflows.",
-        "6": "Ensured stringent adherence to quality, security, and performance standards throughout projects, collaborating closely with product owners.",
-        "7": "Utilised Azure AI Studio for preliminary data analysis and Azure DevOps Wikis for thorough documentation, fostering robust knowledge sharing among developers.",
-        "8": "Demonstrated proficiency in diverse testing methodologies, providing expert advice on Azure service purchases, employing encryption measures for data security, and ensuring comprehensive app accessibility.",
-        "9": "Managed testing and automated application deployments using Azure Board pipelines, significantly enhancing software deployment efficiency and mitigating risks across the product lifecycle."
-      }
+        "1": "Developed an internal website for data queries via Azure OpenAI.",
+        "2": "Created a health app to track vaccinations, advancing public health efforts.",
+        "3": "Launched a mobile app for tracking child development, praised for its user-friendly design.",
+        "4": "Led the migration to Microsoft Planner for HR management, aligning with strategic business goals.",
+        "5": "Streamlined software deployments using Azure Board pipelines.",
+        "6": "Established a backlog for application enhancements, tailoring solutions to evolving client needs."
+      },
+      "conclusion": "My approach integrates a deep understanding of technology with a commitment to continuous improvement, driving forward projects that exceed client expectations"
     },
     "enabled": {
       "heading": "Enabled Solutions",
@@ -71,5 +75,4 @@
     "heading": "Posts",
     "noPost": "No Post added yet"
   }
-
 }
