@@ -2,71 +2,76 @@
   <h1 class="display-6 heading">{{ data.exp.heading }}</h1>
   <hr class="hr" />
 
-  <div class="exp-card">
-    <h5 class="h5">
-      {{ data.exp.chamonix.heading }} - {{ data.exp.chamonix.location }}
-    </h5>
-    <ul class="list-unstyled">
-      <p class="lead">
-        {{ data.exp.chamonix.summary }}
-      </p>
-      <h5 class="h5">{{ data.common.key_achievements }}</h5>
-      <ul>
-        <b>{{ data.exp.chamonix.development }}</b>
-        <ul>
-          <li>{{ data.exp.chamonix.details[1] }}</li>
-          <li>{{ data.exp.chamonix.details[2] }}</li>
-          <li>{{ data.exp.chamonix.details[3] }}</li>
-        </ul>
-        <li>
-          <b>{{ data.exp.chamonix.leadership }}</b>
-          {{ data.exp.chamonix.details[4] }}
-        </li>
-        <li>
-          <b>{{ data.exp.chamonix.efficiency }}</b>
-          {{ data.exp.chamonix.details[5] }}
-        </li>
-        <li>
-          <b>{{ data.exp.chamonix.oe }}</b> {{ data.exp.chamonix.details[6] }}
-        </li>
+  <div class="card-container">
+    <div class="exp-card">
+      <img
+        src="../../../../assets/images/chamonix-logo.png"
+        width="200px"
+        height="auto"
+      />
+      <ul class="list-unstyled">
+        <p class="lead">
+          {{ data.exp.chamonix.summary }}
+        </p>
       </ul>
-    </ul>
-    <p class="lead conclusion">{{ data.exp.chamonix.conclusion }}</p>
+    </div>
+
+    <div class="exp-card">
+      <img
+        src="../../../../assets/images/Enabled.jpeg"
+        width="100px"
+        height="auto"
+      />
+
+      <ul class="list-unstyled">
+        <p class="lead">
+          {{ data.exp.enabled.summary }}
+        </p>
+        <!-- <ul>
+          <li>{{ data.exp.enabled.details[1] }}</li>
+          <li>{{ data.exp.enabled.details[2] }}</li>
+          <li>{{ data.exp.enabled.details[3] }}</li>
+          <li>{{ data.exp.enabled.details[4] }}</li>
+        </ul> -->
+      </ul>
+      <!-- <p class="lead conclusion">{{ data.exp.enabled.conclusion }}</p> -->
+    </div>
+    <div class="exp-card">
+      <img
+        src="../../../../assets/images/Novatech.jpeg"
+        width="100px"
+        height="auto"
+      />
+      <ul class="list-unstyled">
+        <p class="lead">
+          {{ data.exp.novatech.summary }}
+        </p>
+        <!-- <ul>
+          <li>{{ data.exp.novatech.details[1] }}</li>
+          <li>{{ data.exp.novatech.details[2] }}</li>
+          <li>{{ data.exp.novatech.details[3] }}</li>
+          <li>{{ data.exp.novatech.details[4] }}</li>
+        </ul> -->
+      </ul>
+      <!-- <p class="lead conclusion">{{ data.exp.novatech.conclusion }}</p> -->
+    </div>
+
+    <div class="exp-card">
+      <h5 class="h5">
+        {{ data.exp.dpdc.heading }} - {{ data.exp.dpdc.location }}
+      </h5>
+      <ul class="list-unstyled">
+        <p class="lead">
+          {{ data.exp.dpdc.summary }}
+        </p>
+        <!-- <ul>
+          <li>{{ data.exp.dpdc.details[1] }}</li>
+          <li>{{ data.exp.dpdc.details[2] }}</li>
+          <li>{{ data.exp.dpdc.details[3] }}</li>
+          <li>{{ data.exp.dpdc.details[4] }}</li>
+        </ul> -->
+      </ul>
+      <!-- <p class="lead conclusion">{{ data.exp.dpdc.conclusion }}</p> -->
+    </div>
   </div>
-
-  <h5 class="h5">
-    {{ data.exp.enabled.heading }} - {{ data.exp.enabled.location }}
-  </h5>
-  <ul class="list-unstyled">
-    <ul>
-      <li>{{ data.exp.enabled.details[1] }}</li>
-      <li>{{ data.exp.enabled.details[2] }}</li>
-      <li>{{ data.exp.enabled.details[3] }}</li>
-    </ul>
-  </ul>
-
-  <h5 class="h5">
-    {{ data.exp.novatech.heading }} - {{ data.exp.novatech.location }}
-  </h5>
-  <ul class="list-unstyled">
-    <ul>
-      <li>{{ data.exp.novatech.details[1] }}</li>
-      <li>{{ data.exp.novatech.details[2] }}</li>
-      <li>{{ data.exp.novatech.details[3] }}</li>
-      <li>{{ data.exp.novatech.details[4] }}</li>
-    </ul>
-  </ul>
-
-  <h5 class="h5">{{ data.exp.dpdc.heading }} - {{ data.exp.dpdc.location }}</h5>
-  <ul class="list-unstyled">
-    <ul>
-      <li>{{ data.exp.dpdc.details[1] }}</li>
-      <li>{{ data.exp.dpdc.details[2] }}</li>
-      <li>{{ data.exp.dpdc.details[3] }}</li>
-      <li>{{ data.exp.dpdc.details[4] }}</li>
-    </ul>
-  </ul>
-  <button type="button" class="btn btn-primary" (click)="toggleContent()">
-    {{ isExpanded ? data.common.seeLess : data.common.seeMore }}
-  </button>
 </div>
