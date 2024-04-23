@@ -20,6 +20,7 @@
   "exp": {
     "heading": "Work experience",
     "chamonix": {
+      "id": 4,
       "heading": "Chamonix IT",
       "position": "Software Consultant",
       "location": "Adelaide, South Australia",
@@ -39,6 +40,7 @@
       "conclusion": "My approach integrates a deep understanding of technology with a commitment to continuous improvement, driving forward projects that exceed client expectations"
     },
     "enabled": {
+      "id": 3,
       "heading": "Enabled Solutions",
       "position": "Junior Developer",
       "location": "Adelaide, South Australia",
@@ -52,6 +54,7 @@
       "conclusion":"My efforts have consistently fostered stronger client relationships and driven the success of numerous software development projects."
     },
     "novatech": {
+      "id": 2,
       "heading": "Novatech Creative Event Technology",
       "position": "IT Helpdesk intern",
       "location": "Adelaide, South Australia",
@@ -65,6 +68,7 @@
       "conclusion": "My internship has greatly contributed to improving system efficiency and accuracy in project and asset management, demonstrating significant enhancements in IT operations and client service deliverables."
     },
     "dpdc": {
+      "id": 1,
       "heading": "Dhaka Power Distribution Company (DPDC)",
       "position": "Cybersecurity intern",
       "location": "Dhaka, Bangladesh",

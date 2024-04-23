@@ -1,77 +1,16 @@
 <div class="exp-container">
-  <h1 class="display-6 heading">{{ data.exp.heading }}</h1>
+  <h1 class="display-3 heading">{{ 'Work Experience' }}</h1>
   <hr class="hr" />
 
   <div class="card-container">
-    <div class="exp-card">
-      <img
-        src="../../../../assets/images/chamonix-logo.png"
-        width="200px"
-        height="auto"
-      />
+    <div class="exp-card" *ngFor="let item of data">
+      <!-- <img src="../../../../assets/images/{{ item.id }}.jpeg" width="100px" height="auto" /> -->
+      <h5 class="h5">{{ item.heading }}</h5>
+      <p class="lead">{{ item.summary }}</p>
       <ul class="list-unstyled">
-        <p class="lead">
-          {{ data.exp.chamonix.summary }}
-        </p>
+        <li *ngFor="let detail of item.details">{{ detail }}</li>
       </ul>
-    </div>
-
-    <div class="exp-card">
-      <img
-        src="../../../../assets/images/Enabled.jpeg"
-        width="100px"
-        height="auto"
-      />
-
-      <ul class="list-unstyled">
-        <p class="lead">
-          {{ data.exp.enabled.summary }}
-        </p>
-        <!-- <ul>
-          <li>{{ data.exp.enabled.details[1] }}</li>
-          <li>{{ data.exp.enabled.details[2] }}</li>
-          <li>{{ data.exp.enabled.details[3] }}</li>
-          <li>{{ data.exp.enabled.details[4] }}</li>
-        </ul> -->
-      </ul>
-      <!-- <p class="lead conclusion">{{ data.exp.enabled.conclusion }}</p> -->
-    </div>
-    <div class="exp-card">
-      <img
-        src="../../../../assets/images/Novatech.jpeg"
-        width="100px"
-        height="auto"
-      />
-      <ul class="list-unstyled">
-        <p class="lead">
-          {{ data.exp.novatech.summary }}
-        </p>
-        <!-- <ul>
-          <li>{{ data.exp.novatech.details[1] }}</li>
-          <li>{{ data.exp.novatech.details[2] }}</li>
-          <li>{{ data.exp.novatech.details[3] }}</li>
-          <li>{{ data.exp.novatech.details[4] }}</li>
-        </ul> -->
-      </ul>
-      <!-- <p class="lead conclusion">{{ data.exp.novatech.conclusion }}</p> -->
-    </div>
-
-    <div class="exp-card">
-      <h5 class="h5">
-        {{ data.exp.dpdc.heading }} - {{ data.exp.dpdc.location }}
-      </h5>
-      <ul class="list-unstyled">
-        <p class="lead">
-          {{ data.exp.dpdc.summary }}
-        </p>
-        <!-- <ul>
-          <li>{{ data.exp.dpdc.details[1] }}</li>
-          <li>{{ data.exp.dpdc.details[2] }}</li>
-          <li>{{ data.exp.dpdc.details[3] }}</li>
-          <li>{{ data.exp.dpdc.details[4] }}</li>
-        </ul> -->
-      </ul>
-      <!-- <p class="lead conclusion">{{ data.exp.dpdc.conclusion }}</p> -->
+      <p class="lead conclusion">{{ item.conclusion }}</p>
     </div>
   </div>
 </div>

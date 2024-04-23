@@ -10,12 +10,18 @@ import { DataService } from 'src/app/services/data/data.service';
   styleUrl: './work-experience.component.scss',
 })
 export class WorkExperienceComponent {
-  data: any;
+  data: any[] = [];
   isExpanded = false;
   constructor(private dataService: DataService) {
     this.dataService.dataContent.subscribe({
       next: (data: any) => {
-        this.data = data;
+        this.data = Object.keys(data.exp)
+          .map((key) => ({
+            id: data.exp[key].id,
+            heading: data.exp[key].heading,
+            summary: data.exp[key].summary,
+          }))
+          .filter((data) => !!data.id);
       },
     });
   }
