@@ -10,12 +10,14 @@ import { DataService } from 'src/app/services/data/data.service';
   styleUrl: './work-experience.component.scss',
 })
 export class WorkExperienceComponent {
-  data: any[] = [];
+  cardData: any[] = [];
+  data: any;
   isExpanded = false;
   constructor(private dataService: DataService) {
     this.dataService.dataContent.subscribe({
       next: (data: any) => {
-        this.data = Object.keys(data.exp)
+        this.data = data;
+        this.cardData = Object.keys(data.exp)
           .map((key) => ({
             id: data.exp[key].id,
             heading: data.exp[key].heading,
@@ -28,5 +30,9 @@ export class WorkExperienceComponent {
 
   toggleContent() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  openExpDetails(expId: number) {
+    console.log(expId);
   }
 }

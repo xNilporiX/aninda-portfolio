@@ -3,14 +3,14 @@
   <hr class="hr" />
 
   <div class="card-container">
-    <div class="exp-card" *ngFor="let item of data">
+    <div class="exp-card" *ngFor="let item of cardData">
       <!-- <img src="../../../../assets/images/{{ item.id }}.jpeg" width="100px" height="auto" /> -->
       <h5 class="h5">{{ item.heading }}</h5>
       <p class="lead">{{ item.summary }}</p>
       <ul class="list-unstyled">
         <li *ngFor="let detail of item.details">{{ detail }}</li>
       </ul>
-      <p class="lead conclusion">{{ item.conclusion }}</p>
+      <button class="button" (click)="openExpDetails(item.id)">{{ data.common.read_more }}</button>
     </div>
   </div>
 </div>

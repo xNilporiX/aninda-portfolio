@@ -53,8 +53,8 @@
 
   .exp-container .card-container .exp-card {
     width: 100% !important;
-    margin: 0; 
+    margin: 0;
     max-width: 100% !important;
-    padding: map-get(g.$length, 5);  
+    padding: map-get(g.$length, 5);
   }
 }

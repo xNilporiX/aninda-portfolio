@@ -1,7 +1,21 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
-@import 'variables';
+@import "variables";
+
+$length: (
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px,
+  6: 24px,
+  7: 28px,
+  8: 32px,
+  9: 40px,
+  10: 50px,
+);
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -44,27 +58,33 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: hatton;
+}
+
+.button {
+  display: flex;
+  background-color: var(--color-purple);
+  width: 120px;
+  border: 1px solid var(--color-dark-black);
+  border-radius: map-get($length, 1);
+  padding: map-get($length, 1) 0;
+  align-self: center;
+  justify-self: center;
+  align-items: center; // This ensures the content is vertically centered
+  justify-content: center; // This ensures the content is horizontally centered
+  color: var(--color-pastel);
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Importing Bootstrap SCSS file. */
 @import "bootstrap/scss/bootstrap";
-
-$length: (
-  1: 4px,
-  2: 8px,
-  3: 12px,
-  4: 16px,
-  5: 20px,
-  6: 24px,
-  7: 28px,
-  8: 32px,
-  9: 40px,
-  10: 50px,
-);
