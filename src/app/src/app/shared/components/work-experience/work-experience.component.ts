@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data/data.service';
+import {MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { WorkDetailsComponent } from '../work-details/work-details.component';
 
 @Component({
   selector: 'app-work-experience',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatDialogModule],
   templateUrl: './work-experience.component.html',
   styleUrl: './work-experience.component.scss',
 })
@@ -13,7 +15,8 @@ export class WorkExperienceComponent {
   cardData: any[] = [];
   data: any;
   isExpanded = false;
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,
+              private dialog: MatDialog) {
     this.dataService.dataContent.subscribe({
       next: (data: any) => {
         this.data = data;
@@ -33,6 +36,10 @@ export class WorkExperienceComponent {
   }
 
   openExpDetails(expId: number) {
-    console.log(expId);
+    this.dialog.open(WorkDetailsComponent, {
+      data: {
+        expId: expId
+      }
+    })
   }
 }
