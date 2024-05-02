@@ -1,9 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
-import { WorkExperience } from 'src/app/types/types';
+import { Experience, JobDetails } from 'src/app/types/types';
 
-type expId = number;
 @Component({
   selector: 'app-work-details',
   standalone: true,
@@ -13,18 +12,22 @@ type expId = number;
 })
 export class WorkDetailsComponent {
   expId!: number;
-  workDetails: any;
+  jobDetails!: JobDetails;
 
   constructor(
-    private dataService: DataService,
-    @Inject(MAT_DIALOG_DATA) expId: expId
+    @Inject(MAT_DIALOG_DATA) expId: any,
+    private dataService: DataService
   ) {
-    this.expId = expId;
-    // this.dataService.dataContent.subscribe({
-    //   next: (data: WorkExperience) =>{
-    //     // this.workDetails = data.exp.find((exp:any) => exp.id);
-    //     console.log(data.);
-    //   }
-    // })
+    this.expId = expId.expId;
+    this.dataService.dataContent.subscribe({
+      next: (data) => {
+        Object.keys(data.exp as Experience).map((key) => {
+          if (!!data.exp[key].id && data.exp[key].id === this.expId) {
+            this.jobDetails = data.exp[key];
+            console.log(this.jobDetails);
+          }
+        });
+      },
+    });
   }
 }

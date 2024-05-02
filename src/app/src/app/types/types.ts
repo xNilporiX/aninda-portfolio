@@ -5,20 +5,24 @@ export interface IPost {
   content: string;
   author: string;
 }
-export interface WorkExperience {
+export interface Experience {
   heading: string;
-  chamonix: ExperienceDetails;
-  enabled: ExperienceDetails;
-  novatech: ExperienceDetails;
-  dpdc: ExperienceDetails;
-}
+  chamonix: JobDetails;
+  enabled: JobDetails;
+  novatech: JobDetails;
+  dpdc: JobDetails;
+};
 
-export interface ExperienceDetails {
+export interface JobDetails {
   id: number;
   heading: string;
   position: string;
   location: string;
   summary: string;
-  details: Record<string, string>;
+  efficiency?: string;
+  oe?: string;
+  leadership?: string;
+  development?: string;
+  details: { [key: string]: string };
   conclusion: string;
 }

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data/data.service';
-import {MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { WorkDetailsComponent } from '../work-details/work-details.component';
 
 @Component({
