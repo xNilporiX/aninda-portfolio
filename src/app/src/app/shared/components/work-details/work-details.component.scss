@@ -1,0 +1,15 @@
+@use "styles" as g;
+:host {
+    .dialog {
+        padding: map-get(g.$length, 4);
+    
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    mat-dialog-content {
+        padding: 0;
+    }
+}

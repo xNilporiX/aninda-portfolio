@@ -1,12 +1,12 @@
 import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogClose, MatDialogContent } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
 import { Experience, JobDetails } from 'src/app/types/types';
 
 @Component({
   selector: 'app-work-details',
   standalone: true,
-  imports: [],
+  imports: [MatDialogContent, MatDialogClose],
   templateUrl: './work-details.component.html',
   styleUrl: './work-details.component.scss',
 })
