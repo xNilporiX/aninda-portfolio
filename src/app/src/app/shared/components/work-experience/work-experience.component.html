@@ -1,10 +1,9 @@
 <div class="exp-container">
-  <h1 class="display-3 heading">{{ 'Work Experience' }}</h1>
+  <h1 class="display-3 heading">{{ data.exp.heading }}</h1>
   <hr class="hr" />
 
   <div class="card-container">
     <div class="exp-card" *ngFor="let item of cardData">
-      <!-- <img src="../../../../assets/images/{{ item.id }}.jpeg" width="100px" height="auto" /> -->
       <h5 class="h5">{{ item.heading }}</h5>
       <p class="lead">{{ item.summary }}</p>
       <ul class="list-unstyled">

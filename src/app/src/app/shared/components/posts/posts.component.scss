@@ -2,10 +2,8 @@
 
 :host {
   .exp-container {
-    margin-top: map-get(g.$length, 3);
-    padding: map-get(g.$length, 3);
-    background-color: azure;
-    border: 1px solid darkgray;
-    border-radius: map-get(g.$length, 3);
+    padding: map-get(g.$length, 9);
+    color: var(--color-primary);
+    background-color: var(--color-purple);
   }
 }

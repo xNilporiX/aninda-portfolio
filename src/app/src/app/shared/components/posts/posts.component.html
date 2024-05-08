@@ -1,9 +1,11 @@
 <div class="exp-container">
-  <h1 class="display-6">{{ data.posts.heading }}</h1>
-
+  <h1 class="display-3 heading">{{ data.posts.heading }}</h1>
+  <hr class="hr" />
   @for(post of posts; track post){
   {{ post }}
   }@empty{
-  {{ data.posts.noPost }}
+    <div class="heading display-6">
+      {{ data.posts.noPost }}
+    </div>
   }
 </div>

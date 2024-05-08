@@ -1,7 +1,8 @@
 <div class="dialog">
   <div class="header">
-    <h2 mat-dialog-title>{{ jobDetails.heading }}</h2>
+    <h1 mat-dialog-title>{{ jobDetails.heading }}</h1>
     <img
+      *ngIf="!isMobile"
       [mat-dialog-close]="true"
       src="../../../../assets/icons/close-icon.svg"
       height="25px"
@@ -9,16 +10,13 @@
       aria-label="Close dialog"
     />
   </div>
-  <mat-dialog-content>
-    <p class="lead">
-      {{ jobDetails.summary }}
-    </p>
-<!-- 
+  <div>
     <ul>
-      @for(detail of jobDetails.details | keyvalue){
-      <li>
-      </li> 
-      }
-    </ul> -->
-  </mat-dialog-content>
+      <li *ngFor="let details of detailsArray">{{ details.value }}</li>
+    </ul>
+    <p class="lead">{{ jobDetails.conclusion }}</p>
+    <div *ngIf="isMobile" class="centre-content">
+      <button class="button" [mat-dialog-close]="true">Close</button>
+    </div>
+  </div>
 </div>

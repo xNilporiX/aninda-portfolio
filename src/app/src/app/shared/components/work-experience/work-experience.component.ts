@@ -36,10 +36,16 @@ export class WorkExperienceComponent {
   }
 
   openExpDetails(expId: number) {
+    const isMobile = window.innerWidth < 768;
     this.dialog.open(WorkDetailsComponent, {
       data: {
         expId: expId
-      }
+      },
+      width: isMobile ? '100vw' : '40vw',  
+      height: isMobile ? '100vh' : '',    
+      maxWidth: isMobile ? '100vw' : 'none', 
+      maxHeight: isMobile ? '100vh' : 'none', 
+      panelClass: isMobile ? 'full-screen-modal' : ''
     })
   }
 }
