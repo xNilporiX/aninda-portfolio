@@ -1,0 +1,14 @@
+@use "styles" as g;
+:host {
+    .contact-section {
+        background-color: var(--color-indigo);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: map-get(g.$length, 9);
+
+        .left {
+            flex: 1;
+        }
+    }
+}

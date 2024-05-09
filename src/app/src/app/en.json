@@ -86,5 +86,9 @@
   "posts": {
     "heading": "Posts",
     "noPost": "No post added yet"
+  },
+  "contact": {
+    "heading": "Contact",
+    "work": "LET'S WORK TOGETHER!"
   }
 }
