@@ -1,14 +1,58 @@
 @use "styles" as g;
 :host {
+  .contact-container {
+    background-color: var(--color-light-blue);
+    padding: map-get(g.$length, 9);
     .contact-section {
-        background-color: var(--color-indigo);
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        padding: map-get(g.$length, 9);
+      height: auto;
+      display: flex;
+      padding: map-get(g.$length, 9);
+      align-items: center;
+      .left,
+      .right {
+        height: 100%;
+      }
 
-        .left {
-            flex: 1;
+      .left {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+      }
+
+      .right {
+        display: flex;
+        margin: map-get(g.$length, 9);
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          background-color: beige;
+          width: 70%;
+          height: 100%;
+          justify-content: center;
+
+          .button {
+            width: 200px;
+          }
         }
+      }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  :host {
+    .contact-container {
+      padding: map-get(g.$length, 3);
+
+      .contact-section {
+        padding: map-get(g.$length, 3);
+        flex-direction: column;
+      }
+    }
+  }
 }

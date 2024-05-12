@@ -1,6 +1,20 @@
-<div class="contact-section">
-    <h1 class="display-3 heading">{{contactData.contact.heading}}</h1>
+<div class="contact-container">
+  <h1 class="display-3 heading">{{ contactData.contact.heading }}</h1>
+
+  <div class="contact-section">
     <div class="left">
-        <img src="../../../../assets/images/work-with-me.png" height="400" width="400"/>
+      <img
+        class="img-responsive"
+        src="../../../../assets/images/work-with-me.png"
+        height="400"
+        width="400"
+      />
     </div>
+    <div class="right">
+        <div class="content">
+            <p class="display-3 heading">{{ contactData.contact.work }}</p>
+            <button type="button" class="button">{{contactData.contact.download}}</button>
+        </div>
+    </div>
+  </div>
 </div>
