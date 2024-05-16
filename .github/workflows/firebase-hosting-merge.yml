@@ -12,13 +12,15 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Clean install dependencies and builds
-        run: npm install && ng build
+      - name: Install Angular Cli
+        run: npm install -g @angular/cli
+      - name: Clean install dependencies and build the app
+        run: npm ci && ng build
         working-directory: src/app
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANINDA_PORTFOLIO }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANINDA_PORTFOLIO }}"
           channelId: live
           projectId: aninda-portfolio
