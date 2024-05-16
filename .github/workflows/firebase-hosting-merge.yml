@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Install Angular Cli
+      - name: Install Angular CLI
         run: npm install -g @angular/cli
       - name: Clean install dependencies and build the app
         run: npm ci && ng build
         working-directory: src/app
+      - name: List build directory
+        run: ls -al src/app/dist/app
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -24,4 +26,3 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANINDA_PORTFOLIO }}"
           channelId: live
           projectId: aninda-portfolio
-          
