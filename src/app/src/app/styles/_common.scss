@@ -1,0 +1,26 @@
+
+.full-screen-modal {
+  padding: 0 !important;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
+
+.hr {
+  border: 0;
+  height: 5px;
+  background-color: white;
+}
+
+.centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-pastel);
+}

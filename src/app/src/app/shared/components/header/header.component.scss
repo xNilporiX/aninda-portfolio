@@ -1,22 +1,29 @@
-@use "../../../../styles.scss" as g;
+@use  "../../../styles/styles.scss" as g;
 
 :host {
   .header-container {
-    .card {
-      .card-text {
-        color: gray;
-        font-size: larger;
+    display: flex;
+    background-color: g.$color-pastel;;
+    width: 100%;
+
+    .section-1 {
+      flex: 4.5;
+    }
+
+    .section-2 {
+      padding: map-get(g.$length, 3);
+      flex: 5.5;
+    }
+  
+  }
+}
+
+@media (max-width: 768px) {
+  :host .header-container {
+      flex-direction: column; 
+    
+      .section-1 .section-2 {
+        flex: none;
       }
-    }
-
-    .link {
-      text-decoration: none;
-    }
-
-    .social-icon {
-        margin-left: map-get(g.$length, 1);
-      width: 18px;
-      height: 18px;
-    }
   }
 }

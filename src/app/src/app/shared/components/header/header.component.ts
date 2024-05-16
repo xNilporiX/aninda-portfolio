@@ -4,11 +4,19 @@ import { MatCardModule } from '@angular/material/card';
 import { GIT_URL, LINKENDIN_URL } from 'src/app/data/url';
 import { RouterLink } from '@angular/router';
 import { DataService } from 'src/app/services/data/data.service';
+import { ProfileComponent } from '../profile/profile.component';
+import { AboutMeComponent } from '../about-me/about-me.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatSidenavModule, MatCardModule, RouterLink],
+  imports: [
+    ProfileComponent,
+    AboutMeComponent,
+    MatSidenavModule,
+    MatCardModule,
+    RouterLink,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

@@ -1,9 +1,9 @@
-@use "../../../../styles.scss" as g;
+@use  "../../../styles/styles.scss" as g;
 
 :host {
   .exp-container {
-    margin-top: map-get(g.$length, 3);
-    padding: map-get(g.$length, 3);
-    background-color: azure;
+    padding: map-get(g.$length, 9);
+    color: var(--color-primary);
+    background-color: var(--color-purple);
   }
 }

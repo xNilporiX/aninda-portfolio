@@ -1,54 +1,8 @@
 <div class="header-container">
-  <div class="card">
-    <img
-      src="../../../../assets/images/aninda-img.jpg"
-      class="card-img-top"
-      alt="image of author"
-    />
-    <div class="card-body">
-      <h3 class="card-title">{{ data.profile.name }}</h3>
-      <p class="card-text">
-        {{ data.profile.summary }}
-      </p>
-      <h5>{{ data.profile.getStarted }}</h5>
-      <ul>
-        <li>
-          <span>
-            <a
-              class="link"
-              [href]="gitLink"
-              target="_blank">
-              {{ data.profile.github }}
-            </a
-            >
-            <img src="assets/icons/github-icon.svg" class="social-icon" />
-          </span>
-        </li>
-        <li>
-            <span>
-              <a
-                class="link"
-                [href]="linkendIn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >{{ data.profile.linkedIn }}</a
-              >
-              <img src="assets/icons/linkedin-icon.svg" class="social-icon" />
-            </span>
-        </li>
-        <li>
-          <span>
-            <a
-              class="link"
-              href="../../../../assets/files/Aninda_Dhar_ResumeDec2023.pdf"
-              download
-              rel="noopener noreferrer"
-              >{{ data.profile.resume }}</a
-            >
-            <img src="assets/icons/resume-icon.svg" class="social-icon" />
-          </span>
-      </li>
-      </ul>
-    </div>
+  <div class="section-1">
+    <app-profile></app-profile>
+  </div>
+  <div class="section-2">
+    <app-about-me></app-about-me>
   </div>
 </div>
