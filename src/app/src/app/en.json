@@ -88,8 +88,11 @@
     "noPost": "No post added yet"
   },
   "contact": {
-    "heading": "Contact",
-    "work": "LET'S WORK TOGETHER!",
-    "download": "Download Resume"
+    "heading": "Contact Me",
+    "work": "Work with me!",
+    "thanks": "Thanks for checking out my portfolio",
+    "download": "Download Resume",
+    "phone": "+61 470 694 348",
+    "email": "aninda400@gmail.com"
   }
 }
