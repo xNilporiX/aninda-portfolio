@@ -1,7 +1,7 @@
 @use "styles" as g;
 :host {
   .contact-container {
-    background-color: var(--color-almond);
+    background-color: var(--color-dark-violet);
     padding: map-get(g.$length, 9);
     .contact-section {
       height: auto;
@@ -34,10 +34,13 @@
         align-items: start;
         flex: 2;
 
+        .heading {
+          color: var(--color-almond);
+        }
+
         .content {
-       
-          background-color: var(--color-almond);
-          border: 2px solid var(--color-dark-black);
+          background-color: var(--color-dark-violet);
+          border: 2px solid var(--color-almond);
           width: 100%;
           padding: map-get(g.$length, 5);
           justify-content: center;
@@ -46,20 +49,23 @@
           .button {
             padding: map-get(g.$length, 2) map-get(g.$length, 7);
             width: auto;
-            background-color: var(--color-dark-black);
+            background-color: var(--color-almond);
+
+            a {
+              color: var(--color-dark-violet);
+            }
           }
 
           .details{
             display: flex;
             flex-direction: column;
-            
+            color: var(--color-almond);
             padding-top: map-get(g.$length, 5);
 
             .more-details{
               display: flex;
               flex-direction: column;
               margin: map-get(g.$length, 2);
-              border: 2px solid var(--color-dark-black);
               padding: map-get(g.$length, 2);
             }
           }

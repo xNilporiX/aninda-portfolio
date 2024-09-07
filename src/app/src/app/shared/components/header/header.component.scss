@@ -1,9 +1,9 @@
-@use  "../../../styles/styles.scss" as g;
+@use  "styles" as g;
 
 :host {
   .header-container {
     display: flex;
-    background-color: g.$color-pastel;;
+    background-color: var(--color-dark-violet);
     width: 100%;
 
     .section-1 {

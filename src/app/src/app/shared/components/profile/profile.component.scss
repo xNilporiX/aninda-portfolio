@@ -1,4 +1,4 @@
-@use "../../../styles/styles.scss" as g;
+@use "styles" as g;
 
 :host {
   .profile-container {
@@ -21,12 +21,13 @@
       width: 80%;
       flex-direction: column;
       margin: map-get(g.$length, 3);
-      background-color: g.$color-light-gray;
+      background-color: var(--color-dark-violet);
       padding: map-get(g.$length, 5);
       justify-content: center;
       align-items: center;
 
       .text-banner {
+        color: var(--color-almond);
         .display-1 {
           font-size: 6rem;
         }
