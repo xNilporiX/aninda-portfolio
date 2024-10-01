@@ -2,9 +2,7 @@
 
 :host {
   .exp-container {
-    color: var(--color-primary);
     padding: map-get(g.$length, 9);
-    background-color: var(--color-dark-violet);
 
     .card-container {
       display: flex;
@@ -18,8 +16,6 @@
         max-width: 350px;
         margin: map-get(g.$length, 4) 0;
         padding: map-get(g.$length, 7);
-        background-color: var(--color-dark-black);
-        border: 1px solid var(--color-light-black);
       }
     }
 

@@ -3,6 +3,9 @@
 @use "@angular/material" as mat;
 @import "variables";
 @import "common";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 $length: (
   1: 4px,
