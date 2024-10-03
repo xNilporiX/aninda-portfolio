@@ -13,6 +13,11 @@ module.exports = {
       },
       textColor: {
         'primary-1': '#433878'
+      },
+      height: {
+        'sm': '25rem',
+        'md': '40rem',
+        'lg': '80rem',
       }
     },
   },
