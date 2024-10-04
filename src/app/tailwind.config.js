@@ -12,7 +12,8 @@ module.exports = {
         'secondary-2': '#87A2FF'
       },
       textColor: {
-        'primary-1': '#433878'
+        'primary-1': '#433878',
+        'secondary-1': '#A594F9'
       },
       height: {
         'sm': '25rem',
