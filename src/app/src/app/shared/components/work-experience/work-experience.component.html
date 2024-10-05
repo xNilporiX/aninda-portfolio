@@ -1,14 +1,16 @@
-<div class="exp-container bg-primary-1">
-  <h1 class="display-3 heading">{{ data.exp.heading }}</h1>
+<div class="bg-primary-2">
+  <h1>{{ data.exp.heading }}</h1>
 
-  <div class="card-container">
-    <div class="exp-card bg-secondary-2" *ngFor="let item of cardData">
-      <h5 class="h5">{{ item.heading }}</h5>
-      <p class="lead">{{ item.summary }}</p>
-      <ul class="list-unstyled">
+  <div>
+    <div *ngFor="let item of cardData">
+      <h5>{{ item.heading }}</h5>
+      <p>{{ item.summary }}</p>
+      <ul>
         <li *ngFor="let detail of item.details">{{ detail }}</li>
       </ul>
-      <button class="button" (click)="openExpDetails(item.id)">{{ data.common.read_more }}</button>
+      <button (click)="openExpDetails(item.id)">
+        {{ data.common.read_more }}
+      </button>
     </div>
   </div>
 </div>
