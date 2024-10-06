@@ -6,7 +6,9 @@
         src="../../../../assets/images/aninda-animated.png"
         alt=""
       />
-      <span class="font-semibold text-xl tracking-tight ml-2 text-primary-1">Aninda Dhar</span>
+      <span class="font-semibold text-xl tracking-tight ml-2 text-primary-1"
+        >Aninda Dhar</span
+      >
     </div>
     <div class="block sm:hidden">
       <button
@@ -25,29 +27,31 @@
     </div>
     <div
       [ngClass]="open ? 'block' : 'hidden'"
-      class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+      class="w-full flex-grow sm:flex sm:items-center justify-start sm:w-auto"
+    >
       <div class="text-sm sm:flex sm:items-center">
-        <a
+        <button
           routerLink="/"
-          class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white mr-4"
+          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
         >
           Home
-        </a>
-        <a
-          href="#responsive-header"
-          class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white mr-4"
+        </button>
+        <button
+          routerLink="experience"
+          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
         >
-          Examples
-        </a>
-        <a
-          href="#responsive-header"
-          class="no-underline block mt-4 sm:inline-block sm:mt-0 text-teal-lighter hover:text-white"
+          Experience
+        </button>
+        <button
+          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
+        >
+          Projects
+        </button>
+        <button
+          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1"
         >
           Blog
-        </a>
-      </div>
-      <div>
-        <button>Button</button>
+        </button>
       </div>
     </div>
   </nav>
