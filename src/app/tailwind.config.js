@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -11,7 +12,11 @@ module.exports = {
         'primary-2': '#A6E3E9',
         'secondary-2': '#87A2FF',
         'primary-3': '#433878',
-        'secondary-3': '#A594F9'
+        'secondary-3': '#A594F9',
+        custom: {
+          'light-pale': '#F5F7F8',
+          'light-gray': '#d3d3d3'
+        }
       },
       textColor: {
         'primary-1': '#433878',
@@ -29,9 +34,12 @@ module.exports = {
         'secondary-2': '#87A2FF',
         'primary-3': '#433878',
         'secondary-3': '#A594F9'
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+    require('flowbite/plugin')
+  ],
 }
 
