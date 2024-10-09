@@ -1,8 +1,8 @@
 <div class="font-sans antialiased bg-primary-1" id="app">
-  <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+  <nav class="flex items-center justify-between flex-wrap bg-teal p-4" [ngClass]="open? 'bg-secondary-1': 'bg-primary-1'">
     <div class="flex items-center flex-no-shrink text-white mr-6">
       <img
-        class="inline-block h-6 w-6 rounded-full ring-2 ring-white"
+        class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
         src="../../../../assets/images/aninda-animated.png"
         alt=""
       />
@@ -13,10 +13,10 @@
     <div class="block sm:hidden">
       <button
         (click)="toggle()"
-        class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
+        class="flex items-center px-4 py-3 hover:border-2 hover:border-secondary-3 rounded text-primary-1 border-teal-light hover:text-secondary-1"
       >
         <svg
-          class="fill-current h-3 w-3"
+          class="fill-current h-4 w-4"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -32,23 +32,30 @@
       <div class="text-sm sm:flex sm:items-center">
         <button
           routerLink="/"
-          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
+          (click)="navToHome()"
+          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
         >
           Home
         </button>
+        <hr class="sm:hidden ml-4" />
         <button
           routerLink="experience"
-          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
+          (click)="navToExperience()"
+          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
         >
           Experience
         </button>
+        <hr class="sm:hidden ml-4" />
+
         <button
-          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1 mr-4"
+          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
         >
           Projects
         </button>
+        <hr class="sm:hidden ml-4" />
+
         <button
-          class="no-underline px-2 py-2 block sm:inline-block sm:mt-0 text-teal-lighter hover:text-primary-1"
+          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1"
         >
           Blog
         </button>
