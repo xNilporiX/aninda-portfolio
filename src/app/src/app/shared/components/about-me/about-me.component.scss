@@ -6,38 +6,13 @@
     padding: map-get(g.$length, 3);
     height: 100%;
     align-items: center;
-
-    .content {
-      padding: map-get(g.$length, 10);
-      align-self: center;
-
-      .heading {
-        color: var(--color-almond);
-      }
-
-      .hr {
-        border: 0;
-        height: 5px;
-        background-color: white;
-      }
-
-      .details {
-        font-size: larger;
-        color: var(--color-almond);
-      }
-    }
   }
-}
 
-@media (max-width: 768px) {
-  :host {
-    .about-container .content {
-      padding: map-get(g.$length, 3);
-    }
-
-    .heading {
-      display: flex;
-      justify-content: center;
+  @media (max-width: 768px) {
+    :host {
+      .about-container .content {
+        padding: map-get(g.$length, 3);
+      }
     }
   }
 }

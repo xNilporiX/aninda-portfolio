@@ -1,13 +1,12 @@
 @use  "../../../styles/styles.scss" as g;
 
-:host {
-    .content-container {
-        margin: 0 map-get(g.$length, 4);
-    }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-@media (max-width: 768px) {
-    :host .content-container {
-        margin:  map-get(g.$length, 3) 0;
-    }
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

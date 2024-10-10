@@ -1,5 +1,11 @@
-<div class="content-container">
-    <app-about-me></app-about-me>
-    <app-work-experience></app-work-experience>
-    <app-posts></app-posts>
+<div class="flex justify-center items-center bg-primary-1">
+  <div class="flex-col md:grid grid-cols-3">
+    <app-profile class="col-span-1"></app-profile>
+    <div
+      class="col-span-2 scrollbar-thin h-screen sm:overflow-y-scroll scrollbar-thumb-sky-700 scrollbar-track-sky-300"
+    >
+      <app-about-me></app-about-me>
+      <app-home-experience-list></app-home-experience-list>
+    </div>
+  </div>
 </div>
