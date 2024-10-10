@@ -1,24 +1,30 @@
-<div
-  class="content px-4 py-3 gap-1 sm:flex-col sm:px-0 sm:py-0 sm:items-center sm:justify-start"
->
-  <p class="text-start text-2xl text-primary-1">Experience</p>
-
+<div class="sm:flex gap-4">
   <div
-    class="max-w-sm p-6 bg-primary-1 border-2 rounded-md shadow-sm hover:bg-custom-light-pale hover:border-custom-light-gray"
+    class="max-w-sm p-6 mb-2 bg-primary-1 border-2 rounded-md shadow-sm hover:bg-custom-light-pale hover:border-custom-light-gray"
   >
-    <h5
-      class="mb-2 text-2xl font-bold tracking-tight text-primary-1 cursor-pointer"
-    >
-      Chamonix IT - A Synechron Company
+    <h5 class="mb-2 text-xl font-semibold tracking-tight cursor-pointer">
+      <a
+        class="no-underline text-primary-1"
+        [href]="companyLink"
+        target="_blank"
+      >
+        {{ title }}
+      </a>
     </h5>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      As a full-stack developer with a focus on Angular/React and .NET, I've delivered
-      scalable solutions across various industries. I've led projects, managed
-      releases, and ensured code quality through refactoring, testing, and
-      automation.
+    <p class="mb-3 text-base font-normal text-primary-1">
+      {{ summary }}
     </p>
-    <button
-      class="inline-flex items-center border-2 px-3 py-2 text-sm font-medium text-center text-primary-1 hover:border-custom-light-gray rounded-md  focus:ring-4 focus:outline-none focus:ring-blue-300"
+    <div class="flex flex-wrap gap-2">
+      @for (item of badges; track $index) {
+      <span
+        class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+        >{{ item }}</span
+      >
+      }
+    </div>
+
+    <!-- <button
+      class="inline-flex items-center justify-end border-2 px-3 py-2 text-sm font-medium text-center text-primary-1 hover:text-secondary-1 hover:border-custom-light-gray rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300"
     >
       Read more
       <svg
@@ -36,6 +42,6 @@
           d="M1 5h12m0 0L9 1m4 4L9 9"
         />
       </svg>
-    </button>
+    </button> -->
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience-card',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './experience-card.component.scss'
 })
 export class ExperienceCardComponent {
-
+  @Input() title: string = '';
+  @Input() companyLink: string = '';
+  @Input() summary: string = '';
+  @Input() badges: string[] = [];
 }
