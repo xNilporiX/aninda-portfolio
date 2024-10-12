@@ -1,3 +1,5 @@
+const cssnanoPlugin = require('cssnano');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,7 +17,8 @@ module.exports = {
         'secondary-3': '#A594F9',
         custom: {
           'light-pale': '#F5F7F8',
-          'light-gray': '#d3d3d3'
+          'light-gray': '#d3d3d3',
+          'snow': '#FFFAFA',
         }
       },
       textColor: {
@@ -39,7 +42,9 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar'),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('autoprefixer'),
+    require('@fullhuman/postcss-purgecss'),
   ],
 }
 
