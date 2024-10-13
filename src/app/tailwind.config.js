@@ -1,5 +1,3 @@
-const cssnanoPlugin = require('cssnano');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -43,8 +41,6 @@ module.exports = {
   plugins: [
     require('tailwind-scrollbar'),
     require('flowbite/plugin'),
-    require('autoprefixer'),
-    require('@fullhuman/postcss-purgecss'),
   ],
 }
 
