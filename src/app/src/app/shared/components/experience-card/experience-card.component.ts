@@ -12,4 +12,6 @@ export class ExperienceCardComponent {
   @Input() companyLink: string = '';
   @Input() summary: string = '';
   @Input() badges: string[] = [];
+  @Input() timeWorked: string = '';
+  @Input() latest?: boolean = false;
 }
