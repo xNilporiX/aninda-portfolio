@@ -1,7 +1,7 @@
 <div
-  class="content px-4 py-3 gap-1 sm:flex-col sm:px-0 sm:py-0 sm:items-center sm:justify-start"
+  class="px-4 py-3 gap-1 sm:flex-col sm:px-0 sm:py-0 sm:items-center sm:justify-start"
 >
-  <p class="text-start text-2xl text-primary-1">Experience</p>
+  <p class="text-start text-2xl font-semibold text-primary-1">Experience</p>
   <div class="sm:gap-4">
     <ol class="ml-2 relative border-s border-gray-200 dark:border-gray-700">
       <app-experience-card
@@ -18,7 +18,8 @@
           'Tailwind',
           '.NET',
           'BrowserStack',
-          'SQL'
+          'SQL',
+          'Tailwind'
         ]"
         timeWorked="Jan 2023 - Present"
         [latest]="true"
@@ -45,5 +46,26 @@
         timeWorked="July 2022 - Sept 2022"
       />
     </ol>
+  </div>
+
+  <div class="inline-flex custom-transition group">
+    <a
+      href="../../../../assets/files/Aninda_Dhar_ResumeDec2023.pdf"
+      target="_blank"
+      class="cursor-pointer no-underline text-primary-1 lg:text-2xl font-semibold group-hover:text-blue-800 hover:no-underline"
+    >
+      View my Résumé
+    </a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      class="fill-custom-primary-1 duration-300 group-hover:fill-blue-800"
+    >
+      <path
+        d="M680-320v-360H320v-80h440v440h-80ZM480-120v-360H120v-80h440v440h-80Z"
+      />
+    </svg>
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeExperienceListComponent } from './home-experience-list.component';
+import { HomeExperienceListComponent } from './display-experience.component';
 
 describe('HomeExperienceListComponent', () => {
   let component: HomeExperienceListComponent;

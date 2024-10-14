@@ -1,0 +1,27 @@
+<div class="sm:flex gap-4">
+  <div
+    class="p-3 mb-2 w-full cursor-pointer bg-slate-50 rounded-lg shadow-md hover:bg-custom-light-pale hover:border-custom-light-gray"
+  >
+    <div class="grid grid-cols-10">
+      <div class="col-span-9">
+        <div class="mb-1">
+          <span
+            class="bg-blue-100 text-green-500 text-sm lg:text-lg font-medium px-2.5 py-0.5 rounded"
+          >
+            {{ company }}
+          </span>
+        </div>
+        <h5 class="mb-2 text-md lg:text-xl font-semibold tracking-tight text-primary-1">
+          {{ title }}
+        </h5>
+        <p class="col-span-3 mb-3 text-sm lg:text-base font-normal text-gray-700">
+          {{ summary }}
+        </p>
+      </div>
+      <img
+        src="../../../../assets/icons/arrow-forward.svg"
+        class="h-10 flex self-center justify-self-center col-span-1"
+      />
+    </div>
+  </div>
+</div>
