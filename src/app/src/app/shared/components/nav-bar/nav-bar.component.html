@@ -38,18 +38,11 @@
           Home
         </button>
         <hr class="sm:hidden ml-4" />
-        <button
-          routerLink="experience"
-          (click)="navToExperience()"
-          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
-        >
-          Experience
-        </button>
-        <hr class="sm:hidden ml-4" />
 
         <button
           class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
-        >
+          (click)="navToProjects()"
+          >
           Projects
         </button>
         <hr class="sm:hidden ml-4" />
@@ -57,7 +50,7 @@
         <button
           class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1"
         >
-          Blog
+          Blogs
         </button>
       </div>
     </div>

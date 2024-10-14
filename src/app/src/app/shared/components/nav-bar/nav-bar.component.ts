@@ -7,12 +7,16 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrl: './nav-bar.component.scss',
 })
 export class NavBarComponent {
   open = false;
 
-  constructor(private router: Router, private elementRef: ElementRef, private renderer: Renderer2) {
+  constructor(
+    private router: Router,
+    private elementRef: ElementRef,
+    private renderer: Renderer2
+  ) {
     // Listen for clicks outside the navbar
     this.renderer.listen('window', 'click', (event: Event) => {
       if (!this.elementRef.nativeElement.contains(event.target)) {
@@ -34,10 +38,10 @@ export class NavBarComponent {
   }
 
   /**
-   * Navigates to the Experience page.
+   * Navigates to the Projects page.
    */
-  navToExperience() {
-    this.router.navigate(['experience']);
+  navToProjects() {
+    this.router.navigate(['projects']);
     this.open = false;
   }
 }
