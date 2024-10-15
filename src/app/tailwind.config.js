@@ -19,7 +19,7 @@ module.exports = {
         },
       },
       textColor: {
-        "primary-1": "#433878",
+        "primary-1": "#003B73",
         "secondary-1": "#A594F9",
       },
       height: {
