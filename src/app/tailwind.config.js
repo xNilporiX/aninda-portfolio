@@ -15,7 +15,8 @@ module.exports = {
           "secondary-1": "#A594F9",
           "light-pale": "#F5F7F8",
           "light-gray": "#d3d3d3",
-          snow: "#FFFAFA",
+          "snow": "#FFFAFA",
+          "blue-1": "#316BA9"
         },
       },
       textColor: {
