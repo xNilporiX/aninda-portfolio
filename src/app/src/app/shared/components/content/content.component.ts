@@ -6,11 +6,12 @@ import { ExperienceCardComponent } from "../experience-card/experience-card.comp
 import { ProfileComponent } from "../profile/profile.component";
 import { DisplayExperienceComponent } from "../display-experience/display-experience.component";
 import { DisplayProjectsComponent } from "../display-projects/display-projects.component";
+import { NavBarComponent } from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [AboutMeComponent, WorkExperienceComponent, PostsComponent, ExperienceCardComponent, ProfileComponent, DisplayExperienceComponent, DisplayProjectsComponent],
+  imports: [AboutMeComponent, NavBarComponent, WorkExperienceComponent, PostsComponent, ExperienceCardComponent, ProfileComponent, DisplayExperienceComponent, DisplayProjectsComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })

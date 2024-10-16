@@ -1,12 +1,15 @@
-<div class="flex justify-center items-center bg-blue-200 h-full">
-  <div class="flex-col md:grid grid-cols-[35%_65%]">
-    <app-profile class="col-span-1"></app-profile>
-    <div
-      class="col-span-1 2xl:pl-0 2xl:pr-36 xl:pl-10 xl:pr-28 lg:pl-8 lg:pr-14 md:pr-10 sm:pr-8 scrollbar-thin h-screen sm:overflow-y-scroll scrollbar-thumb-sky-700 scrollbar-track-sky-300"
-    >
-      <app-about-me></app-about-me>
-      <app-display-experience></app-display-experience>
-      <app-display-projects></app-display-projects>
+<div class="bg-blue-200 h-auto">
+  <app-nav-bar></app-nav-bar>
+  <div class="flex justify-center items-center">
+    <div class="flex-col sm:grid grid-cols-[35%_65%]">
+      <app-profile class="col-span-1"></app-profile>
+      <div
+        class="col-span-1 2xl:pl-0 2xl:pr-36 xl:pl-10 xl:pr-28 lg:pl-8 lg:pr-14 md:pr-10 sm:pr-8 scrollbar-thin h-screen sm:overflow-y-scroll scrollbar-thumb-sky-700 scrollbar-track-sky-300"
+      >
+        <app-about-me></app-about-me>
+        <app-display-experience></app-display-experience>
+        <app-display-projects></app-display-projects>
+      </div>
     </div>
   </div>
 </div>
