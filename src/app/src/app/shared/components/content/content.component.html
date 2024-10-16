@@ -1,10 +1,12 @@
-<div class="bg-blue-200 h-auto">
+<div
+  class="bg-blue-200 scrollbar-thin h-screen sm:overflow-y-scroll scrollbar-thumb-custom-blue-1 scrollbar-track-blue-200"
+>
   <app-nav-bar></app-nav-bar>
   <div class="flex justify-center items-center">
-    <div class="flex-col sm:grid grid-cols-[35%_65%]">
+    <div class="flex-col sm:grid grid-cols-[35%_65%] 2xl:grid-cols-[30%_70%]">
       <app-profile class="col-span-1"></app-profile>
       <div
-        class="col-span-1 2xl:pl-0 2xl:pr-36 xl:pl-10 xl:pr-28 lg:pl-8 lg:pr-14 md:pr-10 sm:pr-8 scrollbar-thin h-screen sm:overflow-y-scroll scrollbar-thumb-sky-700 scrollbar-track-sky-300"
+        class="col-span-1 2xl:pl-0 2xl:pr-36 xl:pl-10 xl:pr-28 lg:pl-8 lg:pr-14 md:pr-10 sm:pr-8"
       >
         <app-about-me></app-about-me>
         <app-display-experience></app-display-experience>
