@@ -3,6 +3,7 @@
   data-drawer-toggle="default-sidebar"
   aria-controls="default-sidebar"
   type="button"
+  (click)="toggle()"
   class="inline-flex items-center w-auto p-2 mt-2 ml-2 sm:ml-7 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
 >
   <span class="sr-only">Open sidebar</span>
@@ -33,12 +34,12 @@
 
 <aside
   id="default-sidebar"
-  [ngClass]="{'-translate-x-full': !open, 'translate-x-0': open}"
-  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full"
+  [ngClass]="{ '-translate-x-full': !open, 'transition-transform': true }"
+  class="fixed top-0 left-0 z-40 w-64 h-screen bg-blue-100"
   aria-label="Sidenav"
 >
   <div
-    class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+    class="overflow-y-auto py-5 px-3 h-full bg-blue-100 border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700"
   >
     <ul class="space-y-2">
       <li>
@@ -63,8 +64,6 @@
         <button
           type="button"
           class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-          aria-controls="dropdown-pages"
-          data-collapse-toggle="dropdown-pages"
         >
           <svg
             aria-hidden="true"
@@ -79,20 +78,7 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-          <span class="flex-1 ml-3 text-left whitespace-nowrap">Pages</span>
-          <svg
-            aria-hidden="true"
-            class="w-6 h-6"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
+          <span class="flex-1 ml-3 text-left whitespace-nowrap">Projects</span>
         </button>
       </li>
     </ul>
