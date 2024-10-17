@@ -58,6 +58,14 @@ $app-theme: mat.define-light-theme(
   @apply  transition ease-in-out delay-150 hover:-translate-y-1 duration-300
 }
 
+.custom-transition-nav {
+  @apply  transition ease-in-out duration-500
+}
+
+.button-nav {
+  @apply w-full sm:text-end text-xl block text-custom-blue-1 hover:text-custom-light-pale p-3 hover:rounded-md hover:bg-blue-900
+}
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
