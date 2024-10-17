@@ -1,43 +1,45 @@
 <div class="flex fixed w-full bg-blue-200 z-10">
-  <div class="text-white items-center justify-start p-3 w-3/4 sm:w-1/4">
+  <div class="text-white flex items-center justify-start p-3 w-3/4 sm:w-2/4">
     <img
       class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
       src="../../../../assets/images/aninda-animated-remove-bg.png"
       alt=""
     />
-    <span class="font-semibold text-xl tracking-tight ml-2 text-primary-1"
+    <span
+      class="items-center font-semibold text-xl lg:text-2xl tracking-tight ml-2 text-primary-1"
       >Aninda Dhar</span
     >
   </div>
-  <div class="flex justify-end w-1/4 sm:w-3/4">
+  <div class="flex justify-end w-1/2 sm:w-3/4">
     <nav
       class="bg-blue-200 z-10 fixed"
-      [ngClass]="open ? 'bg-blue-300 h-full w-full sm:w-72 border-8 border-custom-light-pale custom-transition-nav' : 'bg-blue-200'"
+      [ngClass]="
+        open
+          ? 'bg-blue-300 h-full w-full sm:w-72 border-8 border-custom-light-pale transition-all duration-150'
+          : 'bg-blue-200'
+      "
     >
       <div class="flex justify-end">
         <button
           (click)="toggle()"
           class="px-4 py-4 rounded text-primary-1 min-w-10"
         >
-          <svg
-            class="fill-current h-5 w-5"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+          <div class="flex justify-center gap-4">
+            <svg
+              class="fill-current h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 items-center"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </div>
         </button>
       </div>
       <div
         [ngClass]="open ? 'block' : 'hidden'"
-        class="w-full mt-auto bg-blue-300  transition-transform p-3"
+        class="w-full mt-auto bg-blue-300 transition-transform p-3"
       >
-        <button
-          routerLink="/"
-          (click)="navToHome()"
-          class="button-nav"
-        >
+        <button routerLink="/" (click)="navToHome()" class="button-nav">
           <div class="flex items-center justify-center sm:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +56,7 @@
           </div>
         </button>
 
-        <button
-          class="button-nav"
-          (click)="navToProjects()"
-        >
+        <button class="button-nav" (click)="navToProjects()">
           <div class="flex items-center justify-center sm:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,9 +73,7 @@
           </div>
         </button>
 
-        <button
-          class="button-nav"
-        >
+        <button class="button-nav">
           <div class="flex items-center justify-center sm:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
