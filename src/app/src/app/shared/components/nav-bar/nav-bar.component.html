@@ -1,58 +1,63 @@
-<div class="font-sans antialiased" id="app">
-  <nav class="bg-blue-200 z-10 w-full flex items-center justify-between fixed flex-wrap bg-teal p-3 sm:ml-14" [ngClass]="open? 'bg-blue-50': 'bg-blue-200'">
-    <div class="flex items-center flex-no-shrink text-white mr-6">
-      <img
-        class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
-        src="../../../../assets/images/aninda-animated-remove-bg.png"
-        alt=""
-      />
-      <span class="font-semibold text-xl tracking-tight ml-2 text-primary-1"
-        >Aninda Dhar</span
-      >
-    </div>
-    <div class="block sm:hidden">
-      <button
-        (click)="toggle()"
-        class="flex items-center px-4 py-4 rounded text-primary-1"
-      >
-        <svg
-          class="fill-current h-5 w-5"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
-    <div
-      [ngClass]="open ? 'block' : 'hidden'"
-      class="w-full flex-grow sm:flex sm:items-center justify-start sm:w-auto"
+<div class="flex fixed w-full bg-blue-200 z-10">
+  <div class="text-white items-center justify-start p-3 w-3/4 sm:w-1/4">
+    <img
+      class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
+      src="../../../../assets/images/aninda-animated-remove-bg.png"
+      alt=""
+    />
+    <span class="font-semibold text-xl tracking-tight ml-2 text-primary-1"
+      >Aninda Dhar</span
     >
-      <div class="text-sm sm:flex sm:items-center">
+  </div>
+  <div class="flex justify-end w-1/4 sm:w-3/4">
+    <nav
+      class="bg-blue-200 z-10 fixed"
+      [ngClass]="
+        open ? 'bg-blue-300 h-1/2 sm:h-full w-full sm:w-72' : 'bg-blue-200'
+      "
+    >
+      <div class="flex justify-end">
+        <button
+          (click)="toggle()"
+          class="px-4 py-4 rounded text-primary-1 min-w-10"
+        >
+          <svg
+            class="fill-current h-5 w-5"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        [ngClass]="open ? 'block' : 'hidden'"
+        class="w-full mt-auto bg-blue-300 transition-transform"
+      >
         <button
           routerLink="/"
           (click)="navToHome()"
-          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-custom-light-pale mr-4"
+          class="w-full text-end text-xl block text-custom-blue-1 hover:text-custom-light-pale"
         >
-          Home
+          <p class="pr-4">Home</p>
         </button>
-        <hr class="sm:hidden ml-4" />
+        <hr class="ml-4" />
 
         <button
-          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1 mr-4"
+          class="w-full text-end text-xl block text-custom-blue-1 hover:text-custom-light-pale"
           (click)="navToProjects()"
-          >
-          Projects
+        >
+          <p class="pr-4">Projects</p>
         </button>
-        <hr class="sm:hidden ml-4" />
+        <hr class="ml-4" />
 
         <button
-          class="ml-4 p-2 w-full text-start text-xl px-2 py-2 block sm:inline-block sm:mt-0 text-primary-1 hover:text-secondary-1"
+          class="w-full text-end text-xl block text-custom-blue-1 hover:text-custom-light-pale"
         >
-          Blogs
+        <p class="pr-4">Blogs</p>
         </button>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </div>
