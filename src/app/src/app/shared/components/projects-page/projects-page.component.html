@@ -2,8 +2,25 @@
   <div
     class="bg-blue-200 sm:pr-8 scrollbar-thin h-screen overflow-y-scroll scrollbar-thumb-custom-blue-1 scrollbar-track-blue-200"
   >
-    <div class="mt-18 p-3">
-      hi
+    <div class="flex-col justify-center items-center">
+      <div class="mt-20">
+        <div class="sm:gap-4">
+          <ol
+            class="ml-2 relative border-s border-gray-200 dark:border-gray-700"
+          >
+            <app-project-timeline-card
+              title="Full-Stack Developer (Angular, .Net) / Technology"
+              summary="The customer required a full-stack solution to facilitate a DevOps survey distribution to clients, ensuring efficient data retrieval and seamless display on the user interface."
+              contributionSummary="Aninda was brought onto the project to uphold high-quality standards, driving the project towards successful delivery with a focus on maintainability and future adaptability."
+              [keyBenefits]="[
+                'Developed a robust, scalable, and maintainable solution, ensuring long-term usability and reliability.',
+                'Enabled the product to be easily adapted for other client engagements, enhancing the overall value proposition.',
+                'Significantly improved client engagement turnover, providing actionable insights into the client\'s current DevOps practices.'
+              ]"
+            />
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
 </div>
