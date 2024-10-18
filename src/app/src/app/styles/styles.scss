@@ -50,6 +50,10 @@ $app-theme: mat.define-light-theme(
   )
 );
 
+.button-outline {
+  @apply px-4 border-2 border-blue-900 transition-transform hover:bg-blue-900 rounded-lg gap-1 flex items-center justify-center
+}
+
 .custom-transition {
   @apply  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300
 }

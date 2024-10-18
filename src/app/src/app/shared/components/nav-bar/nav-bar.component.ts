@@ -41,7 +41,7 @@ export class NavBarComponent {
    * Navigates to the Projects page.
    */
   navToProjects() {
-    this.router.navigate(['projects']);
+    this.router.navigate(['/projects']);
     this.open = false;
   }
 }

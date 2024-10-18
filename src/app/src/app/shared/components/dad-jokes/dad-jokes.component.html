@@ -1,28 +1,25 @@
 <!-- Dad joke -->
 <div class="mt-4 flex-col items-center justify-start gap-1">
   <div class="flex justify-start items-center">
-    <span
-      class="text-primary-1 pb-1 mb-0 text-xl sm:text-2xl font-semibold"
-    >
+    <span class="text-primary-1 pb-1 mb-0 text-xl lg:text-2xl font-semibold">
       Wanna hear a joke?
     </span>
     <img
       src="../../../../assets/icons/stars.png"
       alt=""
-      class="h-6 w-6 self-center"
+      class="h-6 w-6 self-center ml-1"
     />
   </div>
   @if(showButton) {
-  <button
-    class="px-4 border-2 border-blue-900 transition-transform group hover:bg-blue-900 rounded-lg gap-1 flex items-center justify-center"
-    (click)="getJoke()"
-  >
-    <span
-      class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start pb-1"
-    >
-      Yes
-    </span>
-  </button>
+  <div class="group">
+    <button class="button-outline" (click)="getJoke()">
+      <span
+        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start pb-1"
+      >
+        Yes
+      </span>
+    </button>
+  </div>
   }@else { @if (!dadJoke) {
   <div role="status" class="max-w-sm animate-pulse">
     <p>Generating...</p>
@@ -35,16 +32,14 @@
 
   } @else {
   <p>{{ dadJoke.attachments[0].text }}</p>
-
-  <button
-    class="px-4 border-2 border-blue-900 transition-transform group hover:bg-blue-900 rounded-lg gap-1 flex items-center justify-center"
-    (click)="getJoke()"
-  >
-    <span
-      class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start pb-1"
-    >
-      One more!
-    </span>
-  </button>
+  <div class="group">
+    <button class="button-outline" (click)="getJoke()">
+      <span
+        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start pb-1"
+      >
+        One more!
+      </span>
+    </button>
+  </div>
   } }
 </div>
