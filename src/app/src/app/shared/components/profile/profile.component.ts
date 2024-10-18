@@ -1,22 +1,13 @@
 import { Component } from '@angular/core';
-import { DataService } from 'src/app/services/data/data.service';
-
+import { DadJokesComponent } from "../dad-jokes/dad-jokes.component";
+import { SocialsComponent } from "../socials/socials.component";
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [DadJokesComponent, SocialsComponent],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent {
-
-  data: any;
-  constructor(private dataService: DataService){
-    this.dataService.dataContent.subscribe({
-      next: data => { 
-        this.data = data;
-      }
-    })
-  }
 
 }
