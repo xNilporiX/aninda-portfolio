@@ -9,7 +9,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectTimelineCardComponent {
   @Input() title = "";
+  @Input() industry = "";
   @Input() summary = "";
   @Input() contributionSummary = "";
   @Input() keyBenefits: string[] = [];
+  @Input() badges: string[] = [];
 }
