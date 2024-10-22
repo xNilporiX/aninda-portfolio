@@ -15,7 +15,7 @@
       class="bg-blue-200 z-10 fixed"
       [ngClass]="
         open
-          ? 'bg-blue-300 h-full w-full sm:w-72 border-8 border-custom-light-pale transition-all duration-150'
+          ? 'bg-white h-full w-full sm:w-72 border-8 border-custom-light-pale transition-all duration-150'
           : 'bg-blue-200'
       "
     >
@@ -37,7 +37,7 @@
       </div>
       <div
         [ngClass]="open ? 'block' : 'hidden'"
-        class="w-full mt-auto bg-blue-300 transition-transform p-3"
+        class="w-full mt-auto bg-white transition-transform p-3"
       >
         <button routerLink="/" (click)="navToHome()" class="button-nav">
           <div class="flex items-center justify-center sm:justify-start">
