@@ -71,25 +71,80 @@
     <p class="mb-4 text-md lg:text-xl font-normal text-gray-800">
       {{ summary }}
     </p>
-
-    <h3 class="text-primary-1 text-pretty">Roles and Contributions</h3>
-    {{ contributionSummary }}
-
-    <h3 class="mt-4 text-primary-1 text-pretty">Key Benefits</h3>
-    <ul class="list-disc">
-      @for (item of keyBenefits; track $index) {
-      <li>{{ item }}</li>
-      }
-    </ul>
-
-    <h3 class="mt-4 text-primary-1 text-pretty">Technologies</h3>
-    <div class="flex flex-wrap gap-2">
-      @for (item of badges; track $index) {
-      <span
-        class="bg-blue-100 text-blue-800 text-sm lg:text-md font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
-        >{{ item }}</span
+    <cdk-accordion class="example-accordion sm:hidden">
+      <cdk-accordion-item
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
       >
-      }
+        <div
+          class="example-accordion-item-header"
+          (click)="accordionItem.toggle()"
+        >
+          <button
+            class="flex items-center justify-center px-3 py-1 border-[1px] rounded-md border-custom-primary-1"
+          >
+            <span class="text-lg font-medium text-primary-1">Learn More</span>
+            <img
+              class="self-end"
+              [src]="
+                accordionItem.expanded
+                  ? '../../../../../assets/icons/arrow-up.svg'
+                  : '../../../../../assets/icons/arrow-down.svg'
+              "
+            />
+          </button>
+        </div>
+        <div
+          class="example-accordion-item-body mb-2"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+        >
+          <div class="p-2 mt-2">
+            <h3 class="text-primary-1 text-pretty">Roles and Contributions</h3>
+            {{ contributionSummary }}
+
+            <h3 class="mt-4 text-primary-1 text-pretty">Key Benefits</h3>
+            <ul class="list-disc">
+              @for (item of keyBenefits; track $index) {
+              <li>{{ item }}</li>
+              }
+            </ul>
+
+            <h3 class="mt-4 text-primary-1 text-pretty">Technologies</h3>
+            <div class="flex flex-wrap gap-2">
+              @for (item of badges; track $index) {
+              <span
+                class="bg-blue-100 text-blue-800 text-sm lg:text-md font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                >{{ item }}</span
+              >
+              }
+            </div>
+          </div>
+        </div>
+      </cdk-accordion-item>
+    </cdk-accordion>
+    <div class="hidden sm:block">
+      <h3 class="text-primary-1 text-pretty">Roles and Contributions</h3>
+      {{ contributionSummary }}
+
+      <h3 class="mt-4 text-primary-1 text-pretty">Key Benefits</h3>
+      <ul class="list-disc">
+        @for (item of keyBenefits; track $index) {
+        <li>{{ item }}</li>
+        }
+      </ul>
+
+      <h3 class="mt-4 text-primary-1 text-pretty">Technologies</h3>
+      <div class="flex flex-wrap gap-2">
+        @for (item of badges; track $index) {
+        <span
+          class="bg-blue-100 text-blue-800 text-sm lg:text-md font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+          >{{ item }}</span
+        >
+        }
+      </div>
     </div>
   </li>
 </div>
