@@ -17,14 +17,9 @@
     </span>
     <div class="flex flex-col sm:flex-row sm:items-center justify-start">
       <h3
-        class="mb-1 text-xl lg:text-2xl font-semibold text-primary-1 group custom-transition-mini"
+        class="mb-1 text-xl lg:text-3xl font-bold text-primary-1 group custom-transition-mini"
       >
-        <a
-          class="no-underline text-primary-1 hover:no-underline"
-          target="_blank"
-        >
-          {{ title }}
-        </a>
+        {{ title }}
       </h3>
       <div class="flex justify-start gap-1 items-center">
         @if (company) {
@@ -43,8 +38,11 @@
       {{ summary }}
     </p>
     <div class="flex justify-start items-center gap-1">
-      <h3 class="text-primary-1 text-pretty">Roles & Contributions</h3>
-      <img src="../../../../../assets/icons/people.svg" class="w-8 h-8 pb-1 sm:pb-0"/>
+      <h3 class="text-primary-1 text-pretty font-semibold">Roles & Contributions</h3>
+      <img
+        src="../../../../../assets/icons/people.svg"
+        class="w-8 h-8 pb-1 sm:pb-0"
+      />
     </div>
 
     <p class="text-md sm:text-lg">{{ contributionSummary }}</p>
@@ -82,8 +80,11 @@
         >
           <div class="p-2 mt-3">
             <div class="flex justify-start items-center gap-1">
-              <h3 class="text-primary-1 text-pretty">Key Benefits</h3>
-              <img class="w-7 h-7 self-center" src="../../../../../assets/icons/benefit.svg"/>
+              <h3 class="text-primary-1 text-pretty font-semibold">Key Benefits</h3>
+              <img
+                class="w-7 h-7 self-center"
+                src="../../../../../assets/icons/benefit.svg"
+              />
             </div>
             <ul class="list-disc">
               @for (item of keyBenefits; track $index) {
@@ -92,8 +93,11 @@
             </ul>
 
             <div class="flex justify-start items-center gap-1 mt-3">
-              <h3 class="text-primary-1 text-pretty">Technologies</h3>
-              <img class="w-7 h-7 self-center" src="../../../../../assets/icons/tool.svg"/>
+              <h3 class="text-primary-1 text-pretty font-semibold">Technologies</h3>
+              <img
+                class="w-7 h-7 self-center"
+                src="../../../../../assets/icons/tool.svg"
+              />
             </div>
 
             <div class="flex flex-wrap gap-2 mt-1">
