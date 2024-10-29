@@ -26,28 +26,32 @@
           {{ title }}
         </a>
       </h3>
-      @if(industry){
-      <div class="flex justify-start items-center text-wrap">
-        <span
-          class="bg-blue-100 w-auto text-green-800 text-sm lg:text-lg font-semibold sm:me-2 sm:ms-4 px-2.5 py-1.5 sm:py-0.5 rounded flex items-center text-wrap"
-        >
-          <img
-            src="../../../../../assets/icons/factory.svg"
-            alt="Factory Icon"
-            class="w-5 h-5"
-          />
-          {{ industry }}
-        </span>
+      <div class="flex justify-start gap-1 items-center">
+        @if (company) {
+        <app-badge
+          class="sm:me-2 sm:ms-4"
+          [text]="company"
+          icon="company.svg"
+        />
+
+        } @if(industry){
+        <app-badge [text]="industry" icon="factory.svg" />
+        }
       </div>
-      }
     </div>
     <p class="mb-4 text-md lg:text-xl font-normal text-gray-800">
       {{ summary }}
     </p>
-    <cdk-accordion class="example-accordion sm:hidden">
+    <div class="flex justify-start items-center gap-1">
+      <h3 class="text-primary-1 text-pretty">Roles & Contributions</h3>
+      <img src="../../../../../assets/icons/people.svg" class="w-8 h-8 pb-1 sm:pb-0"/>
+    </div>
+
+    <p class="text-md sm:text-lg">{{ contributionSummary }}</p>
+    <cdk-accordion class="example-accordion">
       <cdk-accordion-item
         #accordionItem="cdkAccordionItem"
-        class="example-accordion-item"
+        class="example-accordion-item w-24"
         role="button"
         tabindex="0"
       >
@@ -56,9 +60,11 @@
           (click)="accordionItem.toggle()"
         >
           <button
-            class="flex items-center justify-center px-3 py-1 border-[1px] rounded-md border-custom-primary-1"
+            class="flex items-center justify-center px-3 py-1 border-[1px] rounded-md border-gray-500 bg-custom-light-pale"
           >
-            <span class="text-lg font-medium text-primary-1">Learn More</span>
+            <span class="text-lg font-medium text-primary-1"
+              >{{ accordionItem.expanded ? "Collapse" : "Read More" }}
+            </span>
             <img
               class="self-end"
               [src]="
@@ -74,22 +80,26 @@
           role="region"
           [style.display]="accordionItem.expanded ? '' : 'none'"
         >
-          <div class="p-2 mt-2">
-            <h3 class="text-primary-1 text-pretty">Roles and Contributions</h3>
-            {{ contributionSummary }}
-
-            <h3 class="mt-4 text-primary-1 text-pretty">Key Benefits</h3>
+          <div class="p-2 mt-3">
+            <div class="flex justify-start items-center gap-1">
+              <h3 class="text-primary-1 text-pretty">Key Benefits</h3>
+              <img class="w-7 h-7 self-center" src="../../../../../assets/icons/benefit.svg"/>
+            </div>
             <ul class="list-disc">
               @for (item of keyBenefits; track $index) {
-              <li>{{ item }}</li>
+              <li class="sm:text-lg mb-1">{{ item }}</li>
               }
             </ul>
 
-            <h3 class="mt-4 text-primary-1 text-pretty">Technologies</h3>
-            <div class="flex flex-wrap gap-2">
+            <div class="flex justify-start items-center gap-1 mt-3">
+              <h3 class="text-primary-1 text-pretty">Technologies</h3>
+              <img class="w-7 h-7 self-center" src="../../../../../assets/icons/tool.svg"/>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-1">
               @for (item of badges; track $index) {
               <span
-                class="bg-blue-100 text-blue-800 text-sm lg:text-md font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                class="bg-blue-100 text-blue-800 text-sm lg:text-md font-medium me-2 px-2.5 py-1 rounded dark:bg-blue-900 dark:text-blue-300"
                 >{{ item }}</span
               >
               }
@@ -98,7 +108,7 @@
         </div>
       </cdk-accordion-item>
     </cdk-accordion>
-    <div class="hidden sm:block">
+    <div class="hidden">
       <h3 class="text-primary-1 text-pretty">Roles and Contributions</h3>
       {{ contributionSummary }}
 
