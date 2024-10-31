@@ -1,40 +1,24 @@
-<div class="flex fixed w-full bg-blue-200 z-10">
-  <div
-    class="text-white flex items-center justify-end p-3 w-full hover:cursor-pointer"
-    (click)="navToHome()"
-  >
-    <img
-      class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
-      src="../../../../assets/images/aninda-animated-remove-bg.png"
-      alt=""
-    />
-    <span
-      class="items-center font-semibold text-xl lg:text-2xl tracking-tight ml-2 text-primary-1"
-      >Aninda Dhar</span
-    >
-  </div>
-  <div class="flex justify-end">
+<div class="flex fixed w-screen bg-blue-200 z-10">
+  <div class="flex justify-end w-full">
     <nav
-      class="bg-blue-200 z-10 fixed w-full"
+      class="bg-blue-200 z-10 fixed w-full sm:w-auto sm:min-w-80"
       [ngClass]="
         open
           ? 'bg-white h-full w-full sm:w-72 border-8 border-custom-light-pale transition-all duration-150'
           : 'bg-blue-200'
       "
     >
-      <div class="flex justify-end items-center h-14">
+      <div class="flex justify-end items-center h-14" [ngClass]="open ? 'bg-white': 'bg-blue-200'"  (click)="toggle()">
         <img
           class="inline-block h-7 w-7 rounded-full ring-2 ring-white"
           src="../../../../assets/images/aninda-animated-remove-bg.png"
           alt=""
         />
         <span
-          (click)="navToHome()"
           class="hover:cursor-pointer items-center font-semibold text-xl lg:text-2xl tracking-tight ml-2 text-primary-1"
           >Aninda Dhar</span
         >
         <button
-          (click)="toggle()"
           class="px-4 py-4 rounded text-primary-1 min-w-10"
         >
           <div class="flex justify-center gap-4">
@@ -50,7 +34,7 @@
       </div>
       <div
         [ngClass]="open ? 'block' : 'hidden'"
-        class="w-full mt-auto bg-white transition-all duration-300 p-3"
+        class="w-full h-full mt-auto bg-white transition-all duration-300 p-3"
       >
         <button routerLink="/" (click)="navToHome()" class="button-nav">
           <div class="flex items-center justify-start sm:justify-start">
