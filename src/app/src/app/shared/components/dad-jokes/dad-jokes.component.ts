@@ -25,7 +25,7 @@ export class DadJokesComponent {
         this.dadJoke = undefined;
         setTimeout(()=>{
           this.dadJoke = data;
-        }, 500);
+        }, 400);
       },
       error: (error) => {
         console.error('Failed to get dad joke', error);

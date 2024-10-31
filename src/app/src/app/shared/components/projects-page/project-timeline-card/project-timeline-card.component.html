@@ -15,7 +15,7 @@
         />
       </svg>
     </span>
-    <div class="flex flex-col sm:flex-row sm:items-center justify-start">
+    <div class="flex flex-col lg:flex-row lg:items-center items-start justify-start">
       <h3
         class="mb-1 text-2xl lg:text-3xl font-bold text-primary-1 group custom-transition-mini"
       >
@@ -24,7 +24,7 @@
       <div class="flex justify-start gap-1 items-center mb-1 sm:mb-0">
         @if (company) {
         <app-badge
-          class="sm:me-2 sm:ms-4"
+          class="lg:me-2 lg:ms-4"
           [text]="company"
           icon="company.svg"
         />
@@ -60,9 +60,9 @@
           (click)="accordionItem.toggle()"
         >
           <button
-            class="flex items-center justify-center px-3 py-1 border-[1px] rounded-md border-gray-500 bg-custom-light-pale"
+            class="flex items-center justify-center px-3 py-1 border-[1px] rounded-md bg-custom-light-pale"
           >
-            <span class="text-lg font-medium text-primary-1"
+            <span class="text-md font-medium text-primary-1"
               >{{ accordionItem.expanded ? "Collapse" : "Read More" }}
             </span>
             <img
