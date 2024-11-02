@@ -1,37 +1,4 @@
-<div class="relative h-screen w-full overflow-hidden bg-gray-900">
-  <!-- Outer largest circle with soft glow -->
-  <div
-    class="absolute z-20 bg-blue-400 opacity-5 rounded-full pointer-events-none transition-all ease-out blur-lg"
-    [ngStyle]="{
-      top: cursorY - 300 + 'px',
-      left: cursorX - 300 + 'px',
-      width: '600px',
-      height: '600px'
-    }"
-  ></div>
-
-  <!-- Middle circle with medium glow -->
-  <div
-    class="absolute z-20 bg-blue-400 opacity-10 rounded-full pointer-events-none transition-all ease-out blur-md"
-    [ngStyle]="{
-      top: cursorY - 175 + 'px',
-      left: cursorX - 175 + 'px',
-      width: '350px',
-      height: '350px'
-    }"
-  ></div>
-
-  <!-- Inner smallest circle with strongest glow -->
-  <div
-    class="absolute z-20 bg-blue-400 opacity-15 rounded-full pointer-events-none transition-all ease-out blur-sm"
-    [ngStyle]="{
-      top: cursorY - 100 + 'px',
-      left: cursorX - 100 + 'px',
-      width: '200px',
-      height: '200px'
-    }"
-  ></div>
-
+<div class="relative h-screen w-full overflow-hidden">
   <app-nav-bar></app-nav-bar>
   <router-outlet></router-outlet>
 </div>
