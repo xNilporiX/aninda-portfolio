@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
+      cursor: {
+        'fancy': 'url(hand.cur), pointer',
+      },
       colors: {
         "primary-1": "#E3FDFD",
         "secondary-1": "#CBF1F5",

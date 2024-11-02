@@ -1,2 +1,35 @@
-<app-nav-bar></app-nav-bar>
-<router-outlet></router-outlet>
+<div class="relative h-screen w-full overflow-hidden">
+  <!-- outer larger circle -->
+  <div
+    class="absolute z-20 bg-white opacity-5 rounded-full pointer-events-none transition-transform duration-100 ease-linear"
+    [ngStyle]="{
+      top: cursorY - 250 + 'px',
+      left: cursorX - 250 + 'px',
+      width: '500px',
+      height: '500px'
+    }"
+  ></div>
+  <!-- outer smaller circle -->
+  <div
+    class="absolute z-20 bg-white opacity-10 rounded-full pointer-events-none transition-transform duration-100 ease-linear"
+    [ngStyle]="{
+      top: cursorY - 150 + 'px',
+      left: cursorX - 150 + 'px',
+      width: '300px',
+      height: '300px'
+    }"
+  ></div>
+
+  <!-- Inner smaller circle -->
+  <div
+    class="absolute z-20 bg-white opacity-15 rounded-full pointer-events-none transition-transform duration-100 ease-linear"
+    [ngStyle]="{
+      top: cursorY - 100 + 'px',
+      left: cursorX - 100 + 'px',
+      width: '200px',
+      height: '200px'
+    }"
+  ></div>
+  <app-nav-bar></app-nav-bar>
+  <router-outlet></router-outlet>
+</div>
