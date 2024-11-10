@@ -1,13 +1,16 @@
 <div class="h-full">
   <div
-    class="bg-blue-200 sm:pr-8 scrollbar-thin h-screen overflow-y-scroll scrollbar-thumb-custom-blue-1 scrollbar-track-blue-200"
+    class="bg-blue-200 sm:px-8 lg:px-14 scrollbar-thin h-screen overflow-y-scroll scrollbar-thumb-custom-blue-1 scrollbar-track-blue-200"
   >
-    <div class="flex justify-center items-center">
-      <div class="flex-col sm:grid grid-cols-[35%_65%] 2xl:grid-cols-[30%_70%] mt-20">
-        <app-profile class="col-span-1"></app-profile>
-        <div
-          class="col-span-1 2xl:pl-0 2xl:pr-36 xl:pl-10 xl:pr-28 lg:pl-8 lg:pr-14 md:pr-10"
-        >
+    <div class="flex flex-col justify-center items-center">
+      <!-- Profile Section -->
+      <div class="mt-20 flex justify-center w-full">
+        <app-profile></app-profile>
+      </div>
+
+      <!-- Content Section -->
+      <div class="w-full flex flex-col">
+        <div>
           <app-about-me></app-about-me>
           <app-display-experience></app-display-experience>
           <app-display-projects></app-display-projects>

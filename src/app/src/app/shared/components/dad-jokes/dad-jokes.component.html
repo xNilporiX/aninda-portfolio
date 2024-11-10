@@ -1,8 +1,10 @@
 <!-- Dad joke -->
-<div class="flex-col items-center justify-start gap-1 mt-10 mb-3">
+<div
+  class="flex-col items-center justify-start gap-1 max-w-sm overflow-hidden flex-wrap mt-2"
+>
   <div class="flex items-center">
-    <span class="text-primary-1 pb-1 text-xl lg:text-2xl font-semibold">
-      Wanna hear a joke?
+    <span class="text-primary-1 w-full pb-1 text-2xl lg:text-3xl font-semibold">
+      Let's start with a dad joke?
     </span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +20,7 @@
   </div>
   @if(showButton) {
   <div class="group w-20 flex justify-center items-center">
-    <button class="button-outline" (click)="getJoke()">
+    <button class="button-outline mt-1" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"
       >
@@ -37,7 +39,7 @@
   </div>
 
   } @else {
-  <p>{{ dadJoke.attachments[0].text }}</p>
+  <p class="text-wrap w-72 h-auto xl:w-80">{{ dadJoke.attachments[0].text }}</p>
   <div class="group w-40 flex justify-center items-center">
     <button class="button-outline" (click)="getJoke()">
       <span
