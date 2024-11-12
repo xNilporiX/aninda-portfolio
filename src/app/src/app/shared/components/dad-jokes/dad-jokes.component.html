@@ -2,13 +2,13 @@
 <div
   class="flex-col items-center justify-start gap-1 max-w-sm overflow-hidden flex-wrap mt-2"
 >
-  <div class="flex items-center">
-    <span class="text-primary-1 w-full pb-1 text-2xl lg:text-3xl font-semibold">
+  <div class="flex items-center justify-center w-full">
+    <span class="text-primary-1 pb-1 text-2xl lg:text-3xl font-semibold">
       Let's start with a dad joke?
     </span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="24px"
+      class="h-6 w-6"
       viewBox="0 -960 960 960"
       width="24px"
       fill="#003B73"
@@ -19,12 +19,12 @@
     </svg>
   </div>
   @if(showButton) {
-  <div class="group w-20 flex justify-center items-center">
+  <div class="group w-full sm:w-40 flex justify-center items-center">
     <button class="button-outline mt-1" (click)="getJoke()">
       <span
-        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"
+        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-center sm:self-start"
       >
-        Yes
+        Click here
       </span>
     </button>
   </div>
@@ -39,8 +39,10 @@
   </div>
 
   } @else {
-  <p class="text-wrap w-full sm:w-72 h-auto xl:w-80">{{ dadJoke.attachments[0].text }}</p>
-  <div class="group w-40 flex justify-center items-center">
+  <p class="text-wrap w-full sm:w-72 h-auto xl:w-80">
+    {{ dadJoke.attachments[0].text }}
+  </p>
+  <div class="group w-full sm:w-40 flex justify-center items-center">
     <button class="button-outline" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"

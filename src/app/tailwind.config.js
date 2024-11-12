@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
+      screens: {
+        '3xl': '2000px',
+      },
       cursor: {
         'fancy': 'url(hand.cur), pointer',
       },

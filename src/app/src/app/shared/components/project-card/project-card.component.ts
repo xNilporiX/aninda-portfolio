@@ -11,4 +11,5 @@ export class ProjectCardComponent {
   @Input() title = '';
   @Input() summary = '';
   @Input() company = '';
+  @Input() img = '';
 }
