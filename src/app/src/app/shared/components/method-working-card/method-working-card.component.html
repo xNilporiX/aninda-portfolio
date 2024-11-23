@@ -1,0 +1,32 @@
+<div class="flex items-center justify-between pb-5">
+  <div class="grid grid-cols-2 px-3" [ngClass]="{ 'grid-cols-3': imgLeft }">
+    @if(imgLeft){
+    <div class="col-span-1 flex items-start">
+      <img
+        [src]="img"
+        alt=""
+        class="h-auto w-auto 2xl:max-h-[300px] 2xl:max-w-[300px]"
+      />
+    </div>
+    }
+
+    <div class="col-span-1" [ngClass]="{ 'col-span-2': imgLeft }">
+      <p
+        class="mb-2 text-lg lg:text-3xl 3xl:text-8xl font-semibold tracking-tight text-primary-1"
+      >
+        {{ heading }}
+      </p>
+      <p class="text-xl font-normal" [innerHTML]="content1"></p>
+      <p class="text-xl font-normal" [innerHTML]="content2"></p>
+    </div>
+    @if(!imgLeft){
+    <div class="col-span-1 flex items-start justify-center">
+      <img
+        [src]="img"
+        alt=""
+        class="h-auto w-auto 2xl:max-h-[300px] 2xl:max-w-[300px]"
+      />
+    </div>
+    }
+  </div>
+</div>

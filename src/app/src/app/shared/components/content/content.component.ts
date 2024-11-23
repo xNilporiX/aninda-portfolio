@@ -7,11 +7,12 @@ import { ProfileComponent } from "../profile/profile.component";
 import { DisplayExperienceComponent } from "../display-experience/display-experience.component";
 import { DisplayProjectsComponent } from "../display-projects/display-projects.component";
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
+import { HowIWorkComponent } from "../how-i-work/how-i-work.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [AboutMeComponent, NavBarComponent, WorkExperienceComponent, PostsComponent, ExperienceCardComponent, ProfileComponent, DisplayExperienceComponent, DisplayProjectsComponent],
+  imports: [AboutMeComponent, NavBarComponent, WorkExperienceComponent, PostsComponent, ExperienceCardComponent, ProfileComponent, DisplayExperienceComponent, DisplayProjectsComponent, HowIWorkComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.scss'
 })
