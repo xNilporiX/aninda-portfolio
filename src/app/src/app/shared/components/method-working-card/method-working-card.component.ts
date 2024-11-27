@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './method-working-card.component.html',
-  styleUrl: './method-working-card.component.scss'
+  styleUrl: './method-working-card.component.scss',
 })
 export class MethodWorkingCardComponent {
   @Input() heading = '';
