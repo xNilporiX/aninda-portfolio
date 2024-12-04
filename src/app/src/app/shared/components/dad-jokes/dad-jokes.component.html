@@ -1,8 +1,6 @@
 <!-- Dad joke -->
-<div
-  class="flex-col items-center justify-start gap-1 w-full overflow-hidden flex-wrap mt-2"
->
-  <div class="flex items-center justify-center w-full">
+<div class="flex-col items-center justify-start gap-1 w-80 md:w-full mt-20 md:mt-2">
+  <div class="flex items-center justify-start md:justify-center w-full">
     <span class="text-primary-1 pb-1 text-2xl lg:text-3xl font-semibold">
       Let's start with a dad joke?
     </span>
@@ -28,9 +26,14 @@
   </div>
 
   } @else {
-  <p class="text-wrap w-full sm:w-72 h-auto xl:w-80">
+  <div class="overflow-hidden overflow-y-auto w-80 max-h-32">
+    <p
+    class="break-words text-ellipsis whitespace-normal"
+  >
     {{ dadJoke.attachments[0].text }}
   </p>
+  </div>
+
   <div class="group w-full sm:w-40 flex justify-center items-center">
     <button class="button-outline" (click)="getJoke()">
       <span
@@ -42,13 +45,15 @@
   </div>
   } }
 
-  <p class="text-xs sm:text-sm text-gray-600 mt-3 text-pretty">
-    <a
-      class="hover:underline no-underline text-primary-1"
-      target="_blank"
-      href="https://icanhazdadjoke.com/"
-      >&#64;Dad jokes api</a
-    >
-    by C653 Labs
-  </p>
+  <div class="md:justify-self-start justify-self-center">
+    <p class="text-xs sm:text-sm text-gray-600 mt-3 text-pretty">
+      <a
+        class="hover:underline no-underline text-primary-1"
+        target="_blank"
+        href="https://icanhazdadjoke.com/"
+        >&#64;Dad jokes api</a
+      >
+      by C653 Labs
+    </p>
+  </div>
 </div>

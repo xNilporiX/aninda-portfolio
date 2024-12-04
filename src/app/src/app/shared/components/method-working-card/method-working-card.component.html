@@ -4,17 +4,17 @@
     [ngClass]="{ 'sm:grid-cols-3': imgLeft }"
   >
     @if(imgLeft){
-    <div class="col-span-1 flex items-center">
+    <div class="col-span-1 flex items-center justify-center">
       <img
         [src]="img"
-        class="h-auto w-auto max-h-[250px] max-w-[250px] 2xl:max-h-[300px] 2xl:max-w-[300px]"
+        class="h-auto w-auto"
       />
     </div>
     } @if(!imgLeft){
     <div class="flex col-span-1 sm:hidden items-center justify-center">
       <img
         [src]="img"
-        class="h-auto w-auto max-h-[150px] max-w-[150px] 2xl:max-h-[300px] 2xl:max-w-[300px]"
+        class="h-auto w-auto"
       />
     </div>
     }
@@ -35,7 +35,7 @@
     <div class="hidden col-span-1 sm:flex items-start justify-center">
       <img
         [src]="img"
-        class="h-auto w-auto max-h-[150px] max-w-[150px] 2xl:max-h-[300px] 2xl:max-w-[300px]"
+        class="h-auto w-auto"
       />
     </div>
     }
