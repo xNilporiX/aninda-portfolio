@@ -26,6 +26,10 @@ export class NavBarComponent {
     });
   }
 
+  closeMenu(): void {
+    this.open = false;
+  }
+
   toggle() {
     this.open = !this.open;
   }
