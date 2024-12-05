@@ -16,19 +16,19 @@
     </button>
   </div>
   }@else { @if (!dadJoke) {
-  <div role="status" class="max-w-sm animate-pulse pl-3 md:pl-0">
-    <p>Generating...</p>
+  <div role="status" class="flex justify-center md:justify-start animate-pulse">
+    <p class="text-start">Generating...</p>
     <div
-      class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"
+      class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"
     ></div>
-    <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full mb-2.5"></div>
     <span class="sr-only">Loading...</span>
   </div>
 
   } @else {
   <div class="flex justify-center items-center overflow-hidden overflow-y-auto w-80 max-h-32">
     <p
-    class="break-words text-ellipsis whitespace-normal pl-3 md:pl-0"
+    class="break-words text-ellipsis whitespace-normal text-center"
   >
     {{ dadJoke.attachments[0].text }}
   </p>
