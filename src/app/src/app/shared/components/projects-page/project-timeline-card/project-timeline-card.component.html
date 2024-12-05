@@ -47,7 +47,7 @@
       />
     </div>
 
-    <p class="text-md sm:text-lg">{{ contributionSummary }}</p>
+    <p class="text-md md:text-lg">{{ contributionSummary }}</p>
     <cdk-accordion class="example-accordion 2xl:hidden">
       <cdk-accordion-item
         #accordionItem="cdkAccordionItem"
@@ -92,7 +92,7 @@
             </div>
             <ul class="list-disc">
               @for (item of keyBenefits; track $index) {
-              <li class="sm:text-lg mb-1">{{ item }}</li>
+              <li class="text-md md:text-lg mb-1">{{ item }}</li>
               }
             </ul>
 
