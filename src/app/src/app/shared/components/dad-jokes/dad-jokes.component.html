@@ -1,13 +1,13 @@
 <!-- Dad joke -->
-<div class="flex-col items-center justify-start gap-1 w-80 md:w-full mt-10 md:mt-2">
-  <div class="flex items-center justify-start md:justify-center w-full">
+<div class="flex-col items-center justify-center md:justify-start gap-1 w-80 md:w-full mt-7 md:mt-2">
+  <div class="flex items-center justify-center w-full">
     <span class="text-primary-1 pb-1 text-2xl lg:text-3xl font-semibold">
       Let's start with a dad joke?
     </span>
   </div>
   @if(showButton) {
-  <div class="group w-52 flex justify-center items-center">
-    <button class="flex button-outline self-center justify-self-center mt-1" (click)="getJoke()">
+  <div class="group w-52 flex justify-self-center md:justify-self-start items-center">
+    <button class="flex button-outline mt-1" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-center sm:self-start"
       >
@@ -16,7 +16,7 @@
     </button>
   </div>
   }@else { @if (!dadJoke) {
-  <div role="status" class="max-w-sm animate-pulse">
+  <div role="status" class="max-w-sm animate-pulse pl-3 md:pl-0">
     <p>Generating...</p>
     <div
       class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"
@@ -26,15 +26,15 @@
   </div>
 
   } @else {
-  <div class="overflow-hidden overflow-y-auto w-80 max-h-32">
+  <div class="flex justify-center items-center overflow-hidden overflow-y-auto w-80 max-h-32">
     <p
-    class="break-words text-ellipsis whitespace-normal"
+    class="break-words text-ellipsis whitespace-normal pl-3 md:pl-0"
   >
     {{ dadJoke.attachments[0].text }}
   </p>
   </div>
 
-  <div class="group w-52 flex justify-center items-center">
+  <div class="group w-52 flex justify-self-center md:justify-self-start items-center">
     <button class="flex button-outline self-center justify-self-center" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"
