@@ -1,13 +1,13 @@
 <!-- Dad joke -->
-<div class="flex-col items-center justify-start gap-1 w-80 md:w-full mt-20 md:mt-2">
+<div class="flex-col items-center justify-start gap-1 w-80 md:w-full mt-10 md:mt-2">
   <div class="flex items-center justify-start md:justify-center w-full">
     <span class="text-primary-1 pb-1 text-2xl lg:text-3xl font-semibold">
       Let's start with a dad joke?
     </span>
   </div>
   @if(showButton) {
-  <div class="group w-full sm:w-40 flex justify-center items-center">
-    <button class="button-outline mt-1" (click)="getJoke()">
+  <div class="group w-52 flex justify-center items-center">
+    <button class="flex button-outline self-center justify-self-center mt-1" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-center sm:self-start"
       >
@@ -34,8 +34,8 @@
   </p>
   </div>
 
-  <div class="group w-full sm:w-40 flex justify-center items-center">
-    <button class="button-outline" (click)="getJoke()">
+  <div class="group w-52 flex justify-center items-center">
+    <button class="flex button-outline self-center justify-self-center" (click)="getJoke()">
       <span
         class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"
       >
