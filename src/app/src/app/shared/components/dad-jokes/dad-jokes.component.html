@@ -1,51 +1,54 @@
 <!-- Dad joke -->
-<div class="flex-col items-center justify-center md:justify-start gap-1 w-80 md:w-full mt-7 md:mt-2">
+<div
+  class="flex-col items-center justify-center md:justify-start gap-1 w-80 md:w-full mt-7 md:mt-2"
+>
   <div class="flex items-center justify-center w-full">
     <span class="text-primary-1 pb-1 text-2xl lg:text-3xl font-semibold">
       Let's start with a dad joke?
     </span>
   </div>
   @if(showButton) {
-  <div class="group w-52 flex justify-self-center md:justify-self-start items-center">
-    <button class="flex button-outline mt-1" (click)="getJoke()">
-      <span
-        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-center sm:self-start"
-      >
-        Click here
-      </span>
+  <div class="group w-full flex justify-center items-center">
+    <button
+      class="text-custom-light-pale bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 flex justify-self-center self-center button-outline mt-2"
+      (click)="getJoke()"
+    >
+      <span class="text-xl font-semibold self-center"> Click here </span>
     </button>
   </div>
   }@else { @if (!dadJoke) {
-  <div role="status" class="flex justify-center md:justify-start animate-pulse">
+  <div role="status" class="flex justify-center animate-pulse">
     <p class="text-start">Generating...</p>
-    <div
-      class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"
-    ></div>
+    <div class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"></div>
     <div class="h-2 bg-gray-200 rounded-full mb-2.5"></div>
     <span class="sr-only">Loading...</span>
   </div>
 
   } @else {
-  <div class="flex justify-center items-center overflow-hidden overflow-y-auto w-80 max-h-32">
-    <p
-    class="break-words text-ellipsis whitespace-normal text-center"
+  <div
+    class="flex justify-center items-center overflow-hidden overflow-y-auto w-80 max-h-32"
   >
-    {{ dadJoke.attachments[0].text }}
-  </p>
+    <p
+      class="break-words text-ellipsis whitespace-normal text-center md:text-start"
+    >
+      {{ dadJoke.attachments[0].text }}
+    </p>
   </div>
 
-  <div class="group w-52 flex justify-self-center md:justify-self-start items-center">
-    <button class="flex button-outline self-center justify-self-center" (click)="getJoke()">
+  <div class="group w-full flex justify-center items-center">
+    <button
+      class="text-custom-light-pale max-w-52 bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 button-outline self-center justify-self-center"
+      (click)="getJoke()"
+    >
       <span
-        class="text-custom-primary-1 group-hover:text-custom-light-pale text-xl font-semibold self-start"
+        class="text-xl font-semibold self-start"
       >
         One more!
       </span>
     </button>
   </div>
-  } }
-
-  <div class="md:justify-self-start justify-self-center">
+  } } @if(dadJoke?.attachments){
+  <div class="justify-self-center">
     <p class="text-xs sm:text-sm text-gray-600 mt-3 text-pretty">
       <a
         class="hover:underline no-underline text-primary-1"
@@ -56,4 +59,5 @@
       by C653 Labs
     </p>
   </div>
+  }
 </div>
