@@ -26,6 +26,9 @@ export class NavBarComponent {
     });
   }
 
+  /**
+   * Closes the menu
+   */
   closeMenu(): void {
     this.open = false;
   }
