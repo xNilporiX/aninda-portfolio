@@ -1,172 +1,168 @@
 <div class="h-full">
-  <div
-    class="bg-blue-200 xl:px-10 scrollbar-thin h-screen overflow-y-scroll scrollbar-thumb-custom-blue-1 scrollbar-track-blue-200 pb-2"
-  >
-    <div class="flex-col justify-center items-center mt-14 xl:mt-10">
-      <div class="sm:grid sm:grid-cols-[20%_80%]">
-        <div class="px-4 mb-4">
-          <app-skills />
-        </div>
-        <div class="px-8">
-          <h1 class="text-start text-3xl font-semibold text-primary-1 mb-4">
-            Projects
-          </h1>
-          <ol class="md:ml-5 relative border-s border-gray-400">
-            <app-project-timeline-card
-              title="Full-Stack Developer"
-              company="Chamonix"
-              industry="Technology"
-              summary="Developed a full-stack solution for DevOps assessments, ensuring efficient data retrieval and seamless UI to boost client engagement and feedback."
-              contributionSummary="Ensured high-quality standards and delivered a maintainable, future-ready solution, driving successful and timely project delivery."
-              [keyBenefits]="[
-                'Built a robust and scalable solution ensuring long-term usability and reliability.',
-                'Adapted the product for versatile client engagements, enhancing value.',
-                'Boosted client engagement turnover with actionable DevOps insights.'
-              ]"
-              [badges]="[
-                'Angular',
-                '.NETCore',
-                'Azure SQL Database',
-                'Yaml pipelines',
-                'Azure',
-                'Azure DevOps board'
-              ]"
-            />
+  <div class="flex-col justify-center items-center mt-14 xl:mt-16">
+    <div class="sm:grid sm:grid-cols-[20%_80%]">
+      <div class="px-4 mb-4">
+        <app-skills />
+      </div>
+      <div class="px-8">
+        <h1 class="text-start text-3xl font-semibold text-primary-1 mb-4">
+          Projects
+        </h1>
+        <ol class="md:ml-5 relative border-s border-gray-400">
+          <app-project-timeline-card
+            title="Full-Stack Developer"
+            company="Chamonix"
+            industry="Technology"
+            summary="Developed a full-stack solution for DevOps assessments, ensuring efficient data retrieval and seamless UI to boost client engagement and feedback."
+            contributionSummary="Ensured high-quality standards and delivered a maintainable, future-ready solution, driving successful and timely project delivery."
+            [keyBenefits]="[
+              'Built a robust and scalable solution ensuring long-term usability and reliability.',
+              'Adapted the product for versatile client engagements, enhancing value.',
+              'Boosted client engagement turnover with actionable DevOps insights.'
+            ]"
+            [badges]="[
+              'Angular',
+              '.NETCore',
+              'Azure SQL Database',
+              'Yaml pipelines',
+              'Azure',
+              'Azure DevOps board'
+            ]"
+          />
 
-            <app-project-timeline-card
-              title="Ionic Developer & Release Manager"
-              industry="Education"
-              company="Chamonix"
-              summary="Developer & Release Manager in the Education sector, delivering high-quality solutions that exceeded client expectations and enhanced operational efficiency."
-              contributionSummary="Balanced technical development and release management, ensuring timely delivery of high-quality features and maintaining project visibility to drive client engagement success."
-              [keyBenefits]="[
-                'Delivered high-quality features, achieving high client satisfaction and meeting tight deadlines.',
-                'Managed Google Play and App Store releases, ensuring seamless and error-free deployments.',
-                'Collaborated with Pre-Sales to plan and estimate backlog items, driving client engagement.',
-                'Streamlined task tracking on Azure DevOps, ensuring visibility and alignment with customer goals.'
-              ]"
-              [badges]="['Ionic', 'Angular', 'Figma', 'Azure']"
-            />
+          <app-project-timeline-card
+            title="Ionic Developer & Release Manager"
+            industry="Education"
+            company="Chamonix"
+            summary="Developer & Release Manager in the Education sector, delivering high-quality solutions that exceeded client expectations and enhanced operational efficiency."
+            contributionSummary="Balanced technical development and release management, ensuring timely delivery of high-quality features and maintaining project visibility to drive client engagement success."
+            [keyBenefits]="[
+              'Delivered high-quality features, achieving high client satisfaction and meeting tight deadlines.',
+              'Managed Google Play and App Store releases, ensuring seamless and error-free deployments.',
+              'Collaborated with Pre-Sales to plan and estimate backlog items, driving client engagement.',
+              'Streamlined task tracking on Azure DevOps, ensuring visibility and alignment with customer goals.'
+            ]"
+            [badges]="['Ionic', 'Angular', 'Figma', 'Azure']"
+          />
 
-            <app-project-timeline-card
-              title="Developer"
-              industry="Health"
-              company="Chamonix"
-              summary="Frontend developer in the Health industry, delivering high-quality Angular web solutions on time while exceeding client expectations."
-              contributionSummary="Drove the development of key features, led code refactoring efforts, and delivered high-quality, well-tested solutions tailored to client needs in the health industry."
-              [keyBenefits]="[
-                'Developed critical business features in an Angular project, enhancing functionality for the health sector.',
-                'Led code refactoring to improve code quality, maintainability, and performance.',
-                'Delivered high-quality solutions under tight deadlines, enhancing user experience.',
-                'Conducted thorough unit testing, ensuring reliability and minimizing defects.'
-              ]"
-              [badges]="['Angular', 'Azure']"
-            />
+          <app-project-timeline-card
+            title="Developer"
+            industry="Health"
+            company="Chamonix"
+            summary="Frontend developer in the Health industry, delivering high-quality Angular web solutions on time while exceeding client expectations."
+            contributionSummary="Drove the development of key features, led code refactoring efforts, and delivered high-quality, well-tested solutions tailored to client needs in the health industry."
+            [keyBenefits]="[
+              'Developed critical business features in an Angular project, enhancing functionality for the health sector.',
+              'Led code refactoring to improve code quality, maintainability, and performance.',
+              'Delivered high-quality solutions under tight deadlines, enhancing user experience.',
+              'Conducted thorough unit testing, ensuring reliability and minimizing defects.'
+            ]"
+            [badges]="['Angular', 'Azure']"
+          />
 
-            <app-project-timeline-card
-              title="Project Lead - Software Developer"
-              industry="HR Management"
-              company="Chamonix"
-              summary="Designed and implemented a streamlined process to migrate Early Careers Program boards from Trello to Microsoft Planner, boosting productivity and team collaboration."
-              contributionSummary="Led the planning and execution of the Trello to Microsoft Planner migration, ensuring a seamless transition, enhanced security, and optimized processes to meet the Early Careers Program's needs."
-              [keyBenefits]="[
-                'Led the migration of Early Careers Program boards from Trello to Microsoft Planner, enhancing team collaboration and workflow efficiency.',
-                'Analyzed program requirements and collaborated with the product owner to ensure a seamless data migration.',
-                'Implemented robust testing and debugging processes, ensuring migration reliability and adherence to quality standards.',
-                'Developed and maintained code to meet technical specifications and optimize system performance.',
-                'Streamlined the software development process, driving continuous improvement and system optimization.'
-              ]"
-              [badges]="['Typescript', 'Microsoft Graph API']"
-            />
+          <app-project-timeline-card
+            title="Project Lead - Software Developer"
+            industry="HR Management"
+            company="Chamonix"
+            summary="Designed and implemented a streamlined process to migrate Early Careers Program boards from Trello to Microsoft Planner, boosting productivity and team collaboration."
+            contributionSummary="Led the planning and execution of the Trello to Microsoft Planner migration, ensuring a seamless transition, enhanced security, and optimized processes to meet the Early Careers Program's needs."
+            [keyBenefits]="[
+              'Led the migration of Early Careers Program boards from Trello to Microsoft Planner, enhancing team collaboration and workflow efficiency.',
+              'Analyzed program requirements and collaborated with the product owner to ensure a seamless data migration.',
+              'Implemented robust testing and debugging processes, ensuring migration reliability and adherence to quality standards.',
+              'Developed and maintained code to meet technical specifications and optimize system performance.',
+              'Streamlined the software development process, driving continuous improvement and system optimization.'
+            ]"
+            [badges]="['Typescript', 'Microsoft Graph API']"
+          />
 
-            <app-project-timeline-card
-              title="Software Developer"
-              industry="OpenAI"
-              company="Chamonix"
-              summary="Contributed to developing an internal ChatGPT-like web application for the Chamonix AI project, transforming smart data querying using company data and advanced AI tools."
-              contributionSummary="Played a key role in the Chamonix AI project by developing a powerful internal web application, streamlining data processes, enhancing user engagement, and driving project success through technical expertise and strategic planning."
-              [keyBenefits]="[
-                'Automated data flow from SharePoint to Azure Blob storage using Power Automate, improving data management and accessibility.',
-                'Leveraged Azure AI Studio for data analysis, connecting data sources via Azure Blob storage with multi-parameter investigations.',
-                'Designed an intuitive web application with custom UI elements, enhancing user experience.',
-                'Documented processes on Azure DevOps Wikis, promoting knowledge sharing and accessibility for developers.',
-                'Developed robust application logic for seamless functionality across web components.',
-                'Optimized system design and streamlined software development through continuous improvement strategies.'
-              ]"
-              [badges]="[
-                'Angular',
-                'Angular material',
-                'PrimeNg',
-                'Azure AI',
-                'Azure Blob Storage'
-              ]"
-            />
+          <app-project-timeline-card
+            title="Software Developer"
+            industry="OpenAI"
+            company="Chamonix"
+            summary="Contributed to developing an internal ChatGPT-like web application for the Chamonix AI project, transforming smart data querying using company data and advanced AI tools."
+            contributionSummary="Played a key role in the Chamonix AI project by developing a powerful internal web application, streamlining data processes, enhancing user engagement, and driving project success through technical expertise and strategic planning."
+            [keyBenefits]="[
+              'Automated data flow from SharePoint to Azure Blob storage using Power Automate, improving data management and accessibility.',
+              'Leveraged Azure AI Studio for data analysis, connecting data sources via Azure Blob storage with multi-parameter investigations.',
+              'Designed an intuitive web application with custom UI elements, enhancing user experience.',
+              'Documented processes on Azure DevOps Wikis, promoting knowledge sharing and accessibility for developers.',
+              'Developed robust application logic for seamless functionality across web components.',
+              'Optimized system design and streamlined software development through continuous improvement strategies.'
+            ]"
+            [badges]="[
+              'Angular',
+              'Angular material',
+              'PrimeNg',
+              'Azure AI',
+              'Azure Blob Storage'
+            ]"
+          />
 
-            <app-project-timeline-card
-              title="Software Tester"
-              company="Chamonix"
-              industry="State - Education"
-              summary="Served as a Software Tester, leveraging expertise in testing methodologies, planning, and test suite creation to ensure efficient processes and elevate project quality."
-              contributionSummary="Played a pivotal role as a Software Tester, ensuring high-quality, stable releases through technical expertise and strategic testing. Fostered collaboration to align client expectations with testing outcomes."
-              [keyBenefits]="[
-                'Designed detailed test suites to ensure comprehensive coverage and efficient testing workflows.',
-                'Conducted cross-device application testing using BrowserStack, reducing bugs and enhancing production stability.',
-                'Ensured high accessibility standards, making applications inclusive for diverse user groups.',
-                'Streamlined testing and automated deployment with Azure Board pipelines for reliable rollouts.'
-              ]"
-              [badges]="[
-                'BrowserStack',
-                'Azure Application Insights',
-                'Manual testing'
-              ]"
-            />
+          <app-project-timeline-card
+            title="Software Tester"
+            company="Chamonix"
+            industry="State - Education"
+            summary="Served as a Software Tester, leveraging expertise in testing methodologies, planning, and test suite creation to ensure efficient processes and elevate project quality."
+            contributionSummary="Played a pivotal role as a Software Tester, ensuring high-quality, stable releases through technical expertise and strategic testing. Fostered collaboration to align client expectations with testing outcomes."
+            [keyBenefits]="[
+              'Designed detailed test suites to ensure comprehensive coverage and efficient testing workflows.',
+              'Conducted cross-device application testing using BrowserStack, reducing bugs and enhancing production stability.',
+              'Ensured high accessibility standards, making applications inclusive for diverse user groups.',
+              'Streamlined testing and automated deployment with Azure Board pipelines for reliable rollouts.'
+            ]"
+            [badges]="[
+              'BrowserStack',
+              'Azure Application Insights',
+              'Manual testing'
+            ]"
+          />
 
-            <app-project-timeline-card
-              title="Junior Programmer"
-              industry="Software & IT Services"
-              company="Enabled"
-              summary="Worked as a junior developer, assisting in real-time problem-solving and delivering high-quality solutions, contributing to the success of multiple company projects."
-              contributionSummary="Contributed as a junior developer by leveraging problem-solving skills and technical expertise. Delivered innovative solutions, ensured quality, and drove project success through active client engagement under the guidance of a supervisor."
-              [keyBenefits]="[
-                'Collaborated with the manager to enhance PHP and Symfony applications, ensuring system resilience and client satisfaction.',
-                'Integrated React and TypeScript functionalities, improving user experiences and project capabilities.',
-                'Managed multiple projects, resolving client issues and support tickets effectively.',
-                'Streamlined testing and deployment using Azure Board pipelines for reliable rollouts.'
-              ]"
-              [badges]="['React', 'PHP', 'Symfony']"
-            />
+          <app-project-timeline-card
+            title="Junior Programmer"
+            industry="Software & IT Services"
+            company="Enabled"
+            summary="Worked as a junior developer, assisting in real-time problem-solving and delivering high-quality solutions, contributing to the success of multiple company projects."
+            contributionSummary="Contributed as a junior developer by leveraging problem-solving skills and technical expertise. Delivered innovative solutions, ensured quality, and drove project success through active client engagement under the guidance of a supervisor."
+            [keyBenefits]="[
+              'Collaborated with the manager to enhance PHP and Symfony applications, ensuring system resilience and client satisfaction.',
+              'Integrated React and TypeScript functionalities, improving user experiences and project capabilities.',
+              'Managed multiple projects, resolving client issues and support tickets effectively.',
+              'Streamlined testing and deployment using Azure Board pipelines for reliable rollouts.'
+            ]"
+            [badges]="['React', 'PHP', 'Symfony']"
+          />
 
-            <app-project-timeline-card
-              title="IT Helpdesk"
-              industry="Event Production"
-              company="Novatech"
-              summary="Enhanced the Windows experience and developed a comprehensive time-tracking software flow, optimizing system performance and streamlining internal processes."
-              contributionSummary="Aninda played a key role in improving the Windows environment and optimizing business processes through his technical skills and innovative approach. His contributions to creating a time tracking system and implementing advanced Microsoft 365 solutions greatly enhanced operational efficiency and productivity."
-              [keyBenefits]="[
-                'Enhanced Windows 11 user experience by creating a Windows 11 Pro image with Microsoft Deployment Toolkit and optimizing Active Directory Group Policies for performance and security.',
-                'Conducted hardware stress tests and benchmarking, ensuring machine suitability and maintaining thorough documentation.',
-                'Streamlined time management and billing by developing a precise time-tracking software flow for client projects.',
-                'Improved IT asset management using Microsoft 365 tools like SharePoint Lists and Power Automate Flow, boosting helpdesk efficiency and asset identification.'
-              ]"
-              [badges]="['Microsoft Power Automate', 'Group Policy', 'M365']"
-            />
+          <app-project-timeline-card
+            title="IT Helpdesk"
+            industry="Event Production"
+            company="Novatech"
+            summary="Enhanced the Windows experience and developed a comprehensive time-tracking software flow, optimizing system performance and streamlining internal processes."
+            contributionSummary="Aninda played a key role in improving the Windows environment and optimizing business processes through his technical skills and innovative approach. His contributions to creating a time tracking system and implementing advanced Microsoft 365 solutions greatly enhanced operational efficiency and productivity."
+            [keyBenefits]="[
+              'Enhanced Windows 11 user experience by creating a Windows 11 Pro image with Microsoft Deployment Toolkit and optimizing Active Directory Group Policies for performance and security.',
+              'Conducted hardware stress tests and benchmarking, ensuring machine suitability and maintaining thorough documentation.',
+              'Streamlined time management and billing by developing a precise time-tracking software flow for client projects.',
+              'Improved IT asset management using Microsoft 365 tools like SharePoint Lists and Power Automate Flow, boosting helpdesk efficiency and asset identification.'
+            ]"
+            [badges]="['Microsoft Power Automate', 'Group Policy', 'M365']"
+          />
 
-            <app-project-timeline-card
-              title="Cyber security intern"
-              industry="Energy"
-              company="DPDC"
-              summary="Collaborated with the penetration testing team to enhance user data security, contributing significantly to the organization's cybersecurity efforts across industries."
-              contributionSummary="Aninda played a key role in improving the Windows environment and optimizing business processes through his technical skills and innovative approach. His contributions to creating a time tracking system and implementing advanced Microsoft 365 solutions greatly enhanced operational efficiency and productivity."
-              [keyBenefits]="[
-                'Collaborated with the system administrator to maintain Linux systems and enhance overall security posture.',
-                'Authored a detailed report on the Apache log4j vulnerability, driving awareness and preventive measures.',
-                'Deepened knowledge of global cyber-attacks, improving risk identification and mitigation strategies.',
-                'Presented on cyber-attacks targeting the power sector, aiding in fortifying DPDC’s networks and services.'
-              ]"
-              [badges]="['Microsoft Power Automate', 'Group Policy', 'M365']"
-            />
-          </ol>
-        </div>
+          <app-project-timeline-card
+            title="Cyber security intern"
+            industry="Energy"
+            company="DPDC"
+            summary="Collaborated with the penetration testing team to enhance user data security, contributing significantly to the organization's cybersecurity efforts across industries."
+            contributionSummary="Aninda played a key role in improving the Windows environment and optimizing business processes through his technical skills and innovative approach. His contributions to creating a time tracking system and implementing advanced Microsoft 365 solutions greatly enhanced operational efficiency and productivity."
+            [keyBenefits]="[
+              'Collaborated with the system administrator to maintain Linux systems and enhance overall security posture.',
+              'Authored a detailed report on the Apache log4j vulnerability, driving awareness and preventive measures.',
+              'Deepened knowledge of global cyber-attacks, improving risk identification and mitigation strategies.',
+              'Presented on cyber-attacks targeting the power sector, aiding in fortifying DPDC’s networks and services.'
+            ]"
+            [badges]="['Microsoft Power Automate', 'Group Policy', 'M365']"
+          />
+        </ol>
       </div>
     </div>
   </div>
