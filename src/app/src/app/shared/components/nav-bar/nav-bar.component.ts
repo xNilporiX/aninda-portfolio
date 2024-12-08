@@ -27,7 +27,7 @@ export class NavBarComponent {
   }
 
   /**
-   * Closes the menu
+   * Closes the menu.
    */
   closeMenu(): void {
     this.open = false;
