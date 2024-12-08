@@ -1,21 +1,19 @@
 import { Component } from '@angular/core';
-import { PostsComponent } from '../posts/posts.component';
-import { AboutMeComponent } from '../about-me/about-me.component';
-import { WorkExperienceComponent } from '../work-experience/work-experience.component';
-import { ExperienceCardComponent } from "../experience-card/experience-card.component";
-import { ProfileComponent } from "../profile/profile.component";
-import { DisplayExperienceComponent } from "../display-experience/display-experience.component";
-import { DisplayProjectsComponent } from "../display-projects/display-projects.component";
-import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { HowIWorkComponent } from "../how-i-work/how-i-work.component";
+import { ProfileComponent } from '../profile/profile.component';
+import { DisplayProjectsComponent } from '../display-projects/display-projects.component';
+import { HowIWorkComponent } from '../how-i-work/how-i-work.component';
+import { ContactMeComponent } from '../contact-me/contact-me.component';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [AboutMeComponent, NavBarComponent, WorkExperienceComponent, PostsComponent, ExperienceCardComponent, ProfileComponent, DisplayExperienceComponent, DisplayProjectsComponent, HowIWorkComponent],
+  imports: [
+    ProfileComponent,
+    DisplayProjectsComponent,
+    HowIWorkComponent,
+    ContactMeComponent,
+  ],
   templateUrl: './content.component.html',
-  styleUrl: './content.component.scss'
+  styleUrl: './content.component.scss',
 })
-export class ContentComponent {
-
-}
+export class ContentComponent {}

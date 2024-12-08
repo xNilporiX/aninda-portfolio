@@ -1,5 +1,116 @@
-<div>
-  <h1 class="text-start text-3xl font-semibold text-primary-1 mb-3">Skills</h1>
+<cdk-accordion class="example-accordion 2xl:hidden">
+  <cdk-accordion-item
+    #accordionItem="cdkAccordionItem"
+    class="example-accordion-item w-24"
+    role="button"
+    tabindex="0"
+  >
+    <div class="example-accordion-item-header mb-1 md:mb-0" (click)="accordionItem.toggle()">
+      <button
+        class="md:hidden flex items-center justify-between pl-3 py-1 w-full border-2 border-custom-primary-1 rounded-md bg-none"
+      >
+        <span class="text-start text-3xl font-semibold text-primary-1"
+          >{{ accordionItem.expanded ? "Skills" : "Skills" }}
+        </span>
+        <img
+          class="self-end w-10 h-10"
+          [src]="
+            accordionItem.expanded
+              ? '../../../../../assets/icons/arrow-up.svg'
+              : '../../../../../assets/icons/arrow-down.svg'
+          "
+        />
+      </button>
+    </div>
+    <div
+      class="example-accordion-item-body mb-2 transition-colors ease-linear"
+      role="region"
+      [style.display]="accordionItem.expanded ? '' : 'none'"
+    >
+      <div>
+        <!-- <h1 class="text-start text-3xl font-semibold text-primary-1 mb-3">
+          Skills
+        </h1> -->
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Languages & Frameworks
+          </p>
+          <ul class="w-full space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item text="C/C++, C#, JavaScript, TypeScript" />
+            <app-skill-list-item
+              text="Angular, .NET Core, EF Core, React, Symfony"
+            />
+            <app-skill-list-item text="RESTful APIs, Microsoft Graph API" />
+          </ul>
+        </div>
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Web Development
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item text="HTML, CSS/SCSS, Figma, Tailwind" />
+            <app-skill-list-item text="Angular, React" />
+          </ul>
+        </div>
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Database & Data
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item text="MySQL, MongoDB, Azure SQL Database" />
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Cloud & DevOps
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item text="Azure, Firebase" />
+            <app-skill-list-item text="Yaml Pipelines, CI/CD" />
+            <app-skill-list-item text="Infrastructure as Code (IaC)" />
+          </ul>
+        </div>
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Testing
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item
+              text="BrowserStack, Manual Testing, Jest, Jasmine"
+            />
+          </ul>
+        </div>
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Productivity & Automation Tools
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item
+              text="Power Automate, Microsoft 365, Microsoft Planner, SharePoint"
+            />
+          </ul>
+        </div>
+        <div>
+          <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+            Soft Skills
+          </p>
+          <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
+            <app-skill-list-item text="Teamwork and Collaboration" />
+            <app-skill-list-item text="Cultural Awareness" />
+            <app-skill-list-item text="Communication" />
+            <app-skill-list-item text="Public Speaking" />
+            <app-skill-list-item text="Leadership" />
+          </ul>
+        </div>
+      </div>
+    </div>
+  </cdk-accordion-item>
+</cdk-accordion>
+<div class="hidden md:block">
+  <h1 class="text-start text-3xl font-semibold text-primary-1 mb-3">
+    Skills
+  </h1>
   <div>
     <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
       Languages & Frameworks
@@ -7,7 +118,8 @@
     <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
       <app-skill-list-item text="C/C++, C#, JavaScript, TypeScript" />
       <app-skill-list-item
-        text="Angular, .NET Core, EF Core, React, Symfony"/>
+        text="Angular, .NET Core, EF Core, React, Symfony"
+      />
       <app-skill-list-item text="RESTful APIs, Microsoft Graph API" />
     </ul>
   </div>
@@ -40,9 +152,13 @@
     </ul>
   </div>
   <div>
-    <p class="text-start text-2xl font-semibold text-primary-1 mb-1">Testing</p>
+    <p class="text-start text-2xl font-semibold text-primary-1 mb-1">
+      Testing
+    </p>
     <ul class="max-w-md space-y-1 text-primary-1 list-disc list-inside">
-      <app-skill-list-item text="BrowserStack, Manual Testing, Jest, Jasmine" />
+      <app-skill-list-item
+        text="BrowserStack, Manual Testing, Jest, Jasmine"
+      />
     </ul>
   </div>
   <div>

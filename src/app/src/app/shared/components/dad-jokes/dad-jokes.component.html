@@ -10,7 +10,7 @@
   @if(showButton) {
   <div class="group w-full flex justify-center items-center">
     <button
-      class="text-custom-light-pale bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 flex justify-self-center self-center button-outline mt-2"
+      class="text-custom-light-pale custom-transition-nav bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 flex justify-self-center self-center button-outline mt-2"
       (click)="getJoke()"
     >
       <span class="text-xl font-semibold self-center"> Click here </span>
@@ -19,7 +19,7 @@
   }@else { @if (!dadJoke) {
   <div role="status" class="flex justify-center animate-pulse">
     <p class="text-start">Generating...</p>
-    <div class="h-2 bg-gray-200 rounded-full max-w-[360px] mb-2.5"></div>
+    <div class="h-2 bg-gray-200 rounded-full mb-2.5"></div>
     <div class="h-2 bg-gray-200 rounded-full mb-2.5"></div>
     <span class="sr-only">Loading...</span>
   </div>
@@ -37,7 +37,7 @@
 
   <div class="group w-full flex justify-center items-center">
     <button
-      class="text-custom-light-pale max-w-52 bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 button-outline self-center justify-self-center"
+      class="text-custom-light-pale max-w-52 custom-transition-nav bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 button-outline self-center justify-self-center"
       (click)="getJoke()"
     >
       <span
