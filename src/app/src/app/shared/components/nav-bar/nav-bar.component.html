@@ -39,8 +39,10 @@
         class="flex flex-col justify-between h-full bg-white transition-all duration-300 p-2"
       >
         <div>
-          <button routerLink="/" (click)="navToHome()" class="button-nav">
-            <div class="flex items-center justify-start sm:justify-start">
+          <button routerLink="/" (click)="navToHome()" class="button-nav group">
+            <div
+              class="flex items-center justify-start sm:justify-start text-primary-1 group-hover:text-custom-light-pale"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -56,8 +58,10 @@
             </div>
           </button>
 
-          <button class="button-nav" (click)="navToProjects()">
-            <div class="flex items-center justify-start">
+          <button class="button-nav group" (click)="navToProjects()">
+            <div
+              class="flex items-center justify-start text-primary-1 group-hover:text-custom-light-pale"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -73,8 +77,8 @@
             </div>
           </button>
 
-          <button class="button-nav">
-            <div class="flex items-center justify-start sm:justify-start">
+          <button class="button-nav group">
+            <div class="flex items-center justify-start sm:justify-start text-primary-1 group-hover:text-custom-light-pale">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
