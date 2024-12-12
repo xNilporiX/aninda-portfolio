@@ -10,14 +10,14 @@ module.exports = {
         'fancy': 'url(hand.cur), pointer',
       },
       colors: {
-        "primary-1": "#E3FDFD",
+        "primary-1": "#003B73",
         "secondary-1": "#CBF1F5",
         "primary-2": "#A6E3E9",
         "secondary-2": "#87A2FF",
         "primary-3": "#433878",
         "secondary-3": "#A594F9",
         custom: {
-          "primary-1": "#433878",
+          "primary-1": "#003B73",
           "secondary-1": "#A594F9",
           "light-pale": "#F5F7F8",
           "light-gray": "#d3d3d3",
@@ -35,7 +35,7 @@ module.exports = {
         lg: "80rem",
       },
       borderColor: {
-        "primary-1": "#E3FDFD",
+        "primary-1": "#003B73",
         "secondary-1": "#CBF1F5",
         "primary-2": "#A6E3E9",
         "secondary-2": "#87A2FF",
