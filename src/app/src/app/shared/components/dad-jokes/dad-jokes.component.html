@@ -10,7 +10,7 @@
   @if(showButton) {
   <div class="group w-full flex justify-center items-center">
     <button
-      class="text-custom-light-pale custom-transition-nav bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 flex justify-self-center self-center button-outline mt-2"
+      class="group-hover:text-custom-light-pale custom-transition-nav group-hover:bg-custom-primary-1 bg-none text-custom-primary-1 flex justify-self-center self-center button-outline mt-2"
       (click)="getJoke()"
     >
       <span class="text-xl font-semibold self-center"> Click here </span>
@@ -37,14 +37,10 @@
 
   <div class="group w-full flex justify-center items-center">
     <button
-      class="text-custom-light-pale max-w-52 custom-transition-nav bg-custom-primary-1 group-hover:bg-transparent group-hover:text-custom-primary-1 button-outline self-center justify-self-center"
+      class="group-hover:text-custom-light-pale max-w-52 custom-transition-nav group-hover:bg-custom-primary-1 bg-none text-custom-primary-1 button-outline self-center justify-self-center"
       (click)="getJoke()"
     >
-      <span
-        class="text-xl font-semibold self-start"
-      >
-        One more!
-      </span>
+      <span class="text-xl font-semibold self-start"> One more! </span>
     </button>
   </div>
   } } @if(dadJoke?.attachments){
