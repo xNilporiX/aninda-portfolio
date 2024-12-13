@@ -13,25 +13,18 @@
         [ngClass]="open ? 'bg-white w-auto' : 'bg-blue-200'"
         (click)="toggle()"
       >
-        <button class="px-4 py-4 rounded text-primary-1 min-w-10">
+        <button class="px-3 py-2 rounded text-primary-1 min-w-10">
           <div class="flex justify-center gap-4">
-            <!-- <svg
-              class="fill-current h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 items-center"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg> -->
-            <img [src]="open? '../../../../assets/icons/close-icon.svg': '../../../../assets/icons/menu.svg'" class="h-5 w-5 md:h-6 md:w-6 lg:h-8 lg:w-8 items-center"/>
+            <img [src]="open? '../../../../assets/icons/close-icon.svg': '../../../../assets/icons/menu.svg'" class="h-9 w-9 lg:h-11 lg:w-11 items-center"/>
           </div>
         </button>
         <img
-          class="inline-block h-7 w-7 rounded-full ring-2 ring-white mr-1 cursor-pointer"
+          class="inline-block h-9 w-9 rounded-full ring-2 ring-white mr-1 cursor-pointer"
           src="../../../../assets/images/aninda-2.0-remove-bg.png"
           alt=""
         />
         <span
-          class="hover:cursor-pointer items-end justify-center font-semibold text-lg lg:text-2xl tracking-tight ml-2 text-primary-1"
+          class="hover:cursor-pointer items-end justify-center font-semibold text-2xl lg:text-3xl tracking-tight ml-2 text-primary-1"
           >Aninda Dhar</span
         >
       </div>
