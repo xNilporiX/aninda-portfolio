@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { initFlowbite } from 'flowbite';
 import { CommonModule } from '@angular/common';
+import { ChatPopoverComponent } from "./shared/components/chat-popover/chat-popover.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavBarComponent, CommonModule],
+  imports: [RouterOutlet, NavBarComponent, CommonModule, ChatPopoverComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
