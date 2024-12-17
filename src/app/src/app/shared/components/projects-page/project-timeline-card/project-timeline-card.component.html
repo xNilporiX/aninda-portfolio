@@ -15,7 +15,9 @@
         />
       </svg>
     </span>
-    <div class="flex flex-col lg:flex-row lg:items-center items-start justify-start">
+    <div
+      class="flex flex-col lg:flex-row lg:items-center items-start justify-start"
+    >
       <h3
         class="mb-1 text-2xl lg:text-3xl font-bold text-primary-1 group custom-transition-mini"
       >
@@ -48,7 +50,7 @@
     </div>
 
     <p class="text-md md:text-lg">{{ contributionSummary }}</p>
-    <cdk-accordion class="example-accordion 2xl:hidden">
+    <cdk-accordion class="example-accordion lg:hidden">
       <cdk-accordion-item
         #accordionItem="cdkAccordionItem"
         class="example-accordion-item w-24"
@@ -114,15 +116,33 @@
               >
               }
             </div>
+
+            @if (lessonsLearned) {
+              <div class="mt-3 bg-blue-100 border rounded-md p-3">
+                <div class="flex justify-start items-center gap-1">
+                  <img
+                    class="w-7 h-7 self-start"
+                    src="../../../../../assets/icons/insight.svg"
+                  />
+                  <h3 class="text-primary-1 text-pretty font-semibold">
+                    Lessons Learned
+                  </h3>
+                </div>
+                <div>
+                  <p
+                    class="mb-4 text-md lg:text-xl font-normal text-gray-800"
+                    [innerHTML]="lessonsLearned"
+                  ></p>
+                </div>
+              </div>
+              }
           </div>
         </div>
       </cdk-accordion-item>
     </cdk-accordion>
-    <div class="mt-3 hidden 2xl:block">
+    <div class="mt-3 hidden lg:block">
       <div class="flex justify-start items-center gap-1">
-        <h3 class="text-primary-1 text-pretty font-semibold">
-          Key Benefits
-        </h3>
+        <h3 class="text-primary-1 text-pretty font-semibold">Key Benefits</h3>
         <img
           class="w-7 h-7 self-center"
           src="../../../../../assets/icons/benefit.svg"
@@ -135,9 +155,7 @@
       </ul>
 
       <div class="flex justify-start items-center gap-1 mt-3">
-        <h3 class="text-primary-1 text-pretty font-semibold">
-          Technologies
-        </h3>
+        <h3 class="text-primary-1 text-pretty font-semibold">Technologies</h3>
         <img
           class="w-7 h-7 self-center"
           src="../../../../../assets/icons/tool.svg"
@@ -152,6 +170,25 @@
         >
         }
       </div>
+      @if (lessonsLearned) {
+      <div class="mt-3 bg-blue-100 border rounded-md p-3">
+        <div class="flex justify-start items-center gap-1">
+          <img
+            class="w-7 h-7 self-start"
+            src="../../../../../assets/icons/insight.svg"
+          />
+          <h3 class="text-primary-1 text-pretty font-semibold">
+            Lessons Learned
+          </h3>
+        </div>
+        <div>
+          <p
+            class="mb-4 text-md lg:text-xl font-normal text-gray-800"
+            [innerHTML]="lessonsLearned"
+          ></p>
+        </div>
+      </div>
+      }
     </div>
   </li>
 </div>

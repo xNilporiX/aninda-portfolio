@@ -4,31 +4,28 @@
   <p class="text-start text-3xl font-semibold text-primary-1">Projects</p>
   <div class="sm:gap-4">
     <app-project-card
-      [routerLink]="['/projects', '1']"
       title="Full-Stack Developer / Technology"
       img="../../../../assets/images/project-1.png"
       summary="The customer required a full-stack solution to facilitate a DevOps assessment distribution to clients, ensuring efficient data retrieval and seamless display on the user interface."
       company="Chamonix"
     />
     <app-project-card
-      [routerLink]="['/projects', '2']"
       title="Ionic Angular Developer & Release Manager / Education"
       img="../../../../assets/images/project-2.png"
       summary="Served as a Developer & Release Manager in the Education industry, focusing on delivering impactful and high-quality solutions that met client expectations and enhanced their operational efficiency."
       company="Chamonix"
     />
     <app-project-card
-      [routerLink]="['/projects', '3']"
       title="Developer / Health"
       img="../../../../assets/images/projects-coding-tools.png"
       summary="Worked as a developer in the Health industry, specializing in delivering high-quality frontend web solutions using Angular, consistently meeting project timelines and client expectations."
       company="Chamonix"
     />
   </div>
-  <div class="inline-flex custom-transition group mt-2">
+  <div class="inline-flex custom-transition group mt-3">
     <p
       [routerLink]="['/projects', '0']"
-      class="cursor-pointer no-underline text-primary-1 text-lg lg:text-xl font-semibold group-hover:text-blue-800 hover:no-underline"
+      class="cursor-pointer no-underline text-primary-1 text-2xl font-bold group-hover:text-blue-800 hover:no-underline"
     >
       View all Projects
     </p>

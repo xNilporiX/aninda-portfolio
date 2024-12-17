@@ -16,4 +16,5 @@ export class ProjectTimelineCardComponent {
   @Input() contributionSummary = "";
   @Input() keyBenefits: string[] = [];
   @Input() badges: string[] = [];
+  @Input() lessonsLearned? = '';
 }
